@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
-<!-- <div>
-<?php the_post_thumbnail('large');?>
-</div> -->
-
 <section class="home">
-    <img class="home-banner" src="http://localhost:8888/Inhabitent/wp-content/uploads/2019/11/home-hero.jpg" width="100%" height="100%">        
-    <img class="main-logo" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-full.svg">
+
+<div class="home-banner">
+<?php the_post_thumbnail('large');?>
+<img class="banner-logo" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-full.svg">
+</div>
 
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
@@ -32,6 +31,10 @@ endforeach;
 
 
     <?php endwhile;?>
+    
+<h1>Shop Stuff</h1>
+
+
 
     <?php the_posts_navigation();?>
 
@@ -53,6 +56,5 @@ endforeach;
 <?php endif;?>
 
 </section>
-
     
 <?php get_footer();?>
