@@ -16,3 +16,18 @@
     left: 50%;
   }
 }
+
+.shop-stuff {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

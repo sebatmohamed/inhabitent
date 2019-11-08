@@ -7,10 +7,34 @@
 <img class="banner-logo" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-full.svg">
 </div>
 
+<div class="shop-stuff">
+
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
     'hide_empty' => false,
-));
+));?>
+
+<div>
+<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/do.svg" width="25%">
+<p>Go back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+</div>
+
+<div>
+<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/eat.svg" width="25%">
+<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+</div>
+
+<div>
+<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/sleep.svg" width="25%">
+<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+</div>
+
+<div>
+<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/wear.svg" width="25%">
+<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+</div>
+
+<?php
 foreach ($terms as $term):
     echo $term->name;
     echo '<br>';
@@ -18,6 +42,7 @@ foreach ($terms as $term):
     echo '<br>';
 endforeach;
 ?>
+</div>
 
 
 <?php if( have_posts() ) :
@@ -32,8 +57,6 @@ endforeach;
 
     <?php endwhile;?>
     
-<h1>Shop Stuff</h1>
-
 
 
     <?php the_posts_navigation();?>

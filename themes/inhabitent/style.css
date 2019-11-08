@@ -116,6 +116,16 @@ footer {
   top: 50%;
   left: 50%; }
 
+.shop-stuff {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .shop-stuff p {
+    text-align: center; }
+  .shop-stuff img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
 .about {
   position: absolute;
   top: 0; }
@@ -147,3 +157,21 @@ main {
   main p {
     text-align: justify;
     grid-column-start: 2; }
+
+.product {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  justify-items: center;
+  line-height: 1.75; }
+  .product img {
+    grid-column-start: 1;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: auto; }
+  .product h2, .product p, .product .price {
+    grid-column-start: 2; }
+  .product h2 {
+    text-transform: uppercase;
+    color: #d99054; }
