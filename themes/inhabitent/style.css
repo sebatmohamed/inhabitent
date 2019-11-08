@@ -1,0 +1,141 @@
+/*
+Theme Name: Inhabitant
+Author: Rob H
+Description: A wicked theme I made.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: inhabitant
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.nav {
+  display: grid;
+  grid-template-columns: 3; }
+  .nav img {
+    grid-column-start: 1;
+    width: 30px;
+    z-index: 9999; }
+  .nav .menu-main-container {
+    display: grid;
+    grid-column-start: 3; }
+    .nav .menu-main-container .menu {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      z-index: 9999;
+      bottom: 0; }
+    .nav .menu-main-container a {
+      text-decoration: none; }
+
+footer {
+  display: grid;
+  grid-template-columns: 4;
+  height: 40vh;
+  color: white;
+  background-image: url("http://localhost:8888/inhabitent/wp-content/uploads/2019/11/dark-wood.png");
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.75; }
+  footer h1 {
+    text-transform: uppercase;
+    color: #d99054; }
+  footer .contact {
+    grid-column-start: 1; }
+  footer .hours {
+    grid-column-start: 2; }
+  footer .logo {
+    grid-column-start: 4; }
+    footer .logo img {
+      color: black; }
+  footer .copyright {
+    grid-column-start: 3;
+    text-align: center; }
+    footer .copyright span {
+      text-transform: uppercase; }
+
+.home-banner {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  position: absolute;
+  top: 0; }
+
+.about {
+  position: absolute;
+  top: 0; }
+  .about div {
+    color: black;
+    opacity: 0.9; }
+  .about img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: auto; }
+  .about h2 {
+    position: absolute;
+    z-index: 9999;
+    font-size: 50px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr; }
+  main h3 {
+    text-align: center;
+    font-size: 30px;
+    grid-column-start: 2; }
+  main p {
+    text-align: justify;
+    grid-column-start: 2; }

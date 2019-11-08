@@ -1,0 +1,40 @@
+footer {
+    display: grid;
+    grid-template-columns: 4;
+    height: 40vh;
+    color: white;
+    background-image: url("http://localhost:8888/inhabitent/wp-content/uploads/2019/11/dark-wood.png");
+    justify-items: center;
+    align-items: center;
+    line-height: 1.75;
+
+    h1 {
+        text-transform: uppercase;
+        color: #d99054;
+    }
+
+    .contact {
+        grid-column-start: 1;
+    }
+
+    .hours {
+        grid-column-start: 2;
+    }
+
+    .logo {
+        grid-column-start: 4;
+
+        img {
+            color: black;
+        }
+    }
+
+    .copyright {
+        grid-column-start: 3;
+        text-align: center;
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+}

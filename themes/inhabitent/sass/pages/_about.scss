@@ -1,0 +1,41 @@
+.about {
+  position: absolute;
+  top: 0;
+
+  div {
+    color: black;
+    opacity: 0.9;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+
+  h2 {
+    position: absolute;
+    z-index: 9999;
+    font-size: 50px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+
+  h3 {
+    text-align: center;
+    font-size: 30px;
+    grid-column-start: 2;
+  }
+
+  p {
+    text-align: justify;
+    grid-column-start: 2;
+  }
+}
