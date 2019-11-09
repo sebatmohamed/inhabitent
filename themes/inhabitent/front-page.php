@@ -3,8 +3,9 @@
 <section class="home">
 
 <div class="home-banner">
-<?php the_post_thumbnail('large');?>
-<img class="banner-logo" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-full.svg">
+<img class="hero-image" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
+<!-- <?php the_post_thumbnail('large');?> -->
+<img class="banner-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">
 </div>
 
 <h1>Shop Stuff</h1>
