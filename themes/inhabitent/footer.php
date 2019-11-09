@@ -4,8 +4,8 @@
 <div class="contact">
 <h1>Contact info</h1>
 <p><i class="fas fa-envelope"></i> info@inhabitent.com</p>
-<p><i class="fas fa-phone-alt"></i> 778-456-7891</p>
-<div>
+<p><i class="fas fa-phone"></i> 778-456-7891</p>
+<div class="social-media-icons">
 <i class="fab fa-facebook-square"></i>
 <i class="fab fa-twitter-square"></i>
 <i class="fab fa-google-plus-square"></i>

@@ -7,6 +7,9 @@
 <img class="banner-logo" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-full.svg">
 </div>
 
+<h1>Shop Stuff</h1>
+
+
 <div class="shop-stuff">
 
 <?php $terms = get_terms( array(
@@ -35,14 +38,18 @@
 </div>
 
 <?php
-foreach ($terms as $term):
-    echo $term->name;
-    echo '<br>';
-    echo $term->$slug;
-    echo '<br>';
-endforeach;
-?>
+
+foreach ($terms as $term):?>
+
+<div class="front-page-product-sections">
+    <button class="front-page-product-sections-btn" href="<?php echo "product-type/" . $term->slug ;?>"> <?php echo $term->name ;?> </button>
 </div>
+    
+<?php endforeach;?>
+
+</div>
+
+<h1>Inhabitent Journal</h1>
 
 
 <?php if( have_posts() ) :
@@ -51,32 +58,56 @@ endforeach;
     while( have_posts() ) :
         the_post(); ?>
 
-    <?php the_title();
-    the_content();?>
-
+    <!-- <?php the_title();
+    the_content();?> -->
 
     <?php endwhile;?>
     
-
-
     <?php the_posts_navigation();?>
 
+    <div class="inhabitent-journal">
+    
+    <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/van-camper.jpg">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/warm-cocktail.jpg">
+    <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/healthy-camp-food.jpg">
+
     <?php
-    $args = array( 'numberposts' => 3, 'order' => 'ASC', 'orderby' => 'title');
+    $args = array( 'numberposts' => 3, 'order' => 'ASC', 'orderby' => 'date');
     $postslist = get_posts( $args );
     foreach ($postslist as $post): setup_postdata($post);?>
+
     <div>
     <?php the_date();?>
     <br>
-    <?php the_title();?>
+    <span><?php the_title();?></span>
+    <br>
     <?php echo wp_trim_words(get_the_excerpt(), 10, '...');?>
     </div>
 
     <?php endforeach;?> 
 
+    <?php 
+    
+    foreach ($terms as $term):?>
+
+    <section class="front-page-journal-sections">
+        <button class="front-page-journal-sections-btn" href="<?php echo "product-type/" . $post->slug ;?>"> <?php echo $term->name ;?> </button>
+    </section>
+
+    <?php endforeach;?> 
+
+
+    </div>
+
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
+<h1>Latest adventures</h1>
+
+
+
+
 
 </section>
     
