@@ -61,12 +61,16 @@ table {
     grid-column-start: 1;
     width: 30px;
     z-index: 9999; }
+  .nav i {
+    grid-column-start: 2;
+    z-index: 9999;
+    color: white; }
   .nav .menu-main-container {
     display: grid;
     grid-column-start: 3; }
     .nav .menu-main-container .menu {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       z-index: 9999;
       bottom: 0; }
     .nav .menu-main-container a {
@@ -128,7 +132,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
-  padding: 20px; }
+  padding: 50px; }
   .shop-stuff div {
     position: relative;
     border-right: 0.1px solid #a1a1a1;
@@ -155,7 +159,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
-  padding: 20px; }
+  padding: 50px; }
   .inhabitent-journal img {
     width: 100%;
     -o-object-fit: cover;
@@ -171,6 +175,33 @@ h1 {
     background: none;
     padding-right: 5px;
     padding-left: 5px;
+    position: relative; }
+
+.latest-adventures {
+  display: grid;
+  grid-template-areas: "a a b b" "a a c d";
+  grid-gap: 20px;
+  padding: 50px; }
+  .latest-adventures img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .latest-adventures .item1 {
+    grid-area: a;
+    height: 100%; }
+  .latest-adventures .item2 {
+    grid-area: b;
+    height: 250px; }
+  .latest-adventures .item3 {
+    grid-area: c; }
+  .latest-adventures .item4 {
+    grid-area: d; }
+  .latest-adventures button {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    background-color: #248a83;
+    padding: 5px;
     position: relative; }
 
 .about {

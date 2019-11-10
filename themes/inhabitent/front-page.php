@@ -106,8 +106,13 @@ foreach ($terms as $term):?>
 
 <h1>Latest adventures</h1>
 
-
-
+<div class="latest-adventures">
+    <img class='item1' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/canoe-girl.jpg">
+    <img class='item2' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
+    <img class='item3' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg">
+    <img class='item4' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/night-sky.jpg">
+    <button>More adventures</button>
+</div>
 
 
 </section>

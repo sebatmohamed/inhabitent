@@ -9,6 +9,7 @@
 <body <?php body_class();?>>
 <div class="nav">
 <img class="home-link" src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent-white.svg">
+<i class="fas fa-search"></i> 
 <?php wp_nav_menu(array('theme_location' => 'primary'));?>
 </div>
 

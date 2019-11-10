@@ -8,13 +8,19 @@
     z-index: 9999;
   }
 
+  i {
+    grid-column-start: 2;
+    z-index: 9999;
+    color: white;
+  }
+
   .menu-main-container {
     display: grid;
     grid-column-start: 3;
 
     .menu {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       z-index: 9999;
       bottom: 0;
     }
