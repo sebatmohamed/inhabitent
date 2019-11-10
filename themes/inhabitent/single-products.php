@@ -9,11 +9,17 @@
         the_post(); ?>
     
     <?php the_post_thumbnail('large');?>
+
     <div class="price">
     <h2><?php the_title(); ?></h2>
-    <?php echo "$ " . get_field('price');?>
+    <h3><?php echo "$ " . get_field('price');?></h3>
     <?php the_content(); ?>
+    <button><i class="fab fa-facebook-f"></i> Like</button>
+    <button><i class="fab fa-twitter"></i> Tweet</button>
+    <button><i class="fab fa-pinterest"></i> Pin</button>
     </div>
+
+    
     <!-- <h3><?php the_permalink();?></h3> -->
     
     <!-- Loop ends -->
