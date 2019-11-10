@@ -92,7 +92,7 @@ foreach ($terms as $term):?>
     foreach ($terms as $term):?>
 
     <section class="front-page-journal-sections">
-        <button class="front-page-journal-sections-btn" href="<?php echo "product-type/" . $post->slug ;?>"> <?php echo $term->name ;?> </button>
+        <button class="front-page-journal-sections-btn">Read entry</button>
     </section>
 
     <?php endforeach;?> 

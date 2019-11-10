@@ -235,6 +235,21 @@ main {
     text-align: justify;
     grid-column-start: 2; }
 
+.find-us {
+  padding: 50px; }
+  .find-us h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 20px; }
+  .find-us p {
+    padding-bottom: 20px;
+    line-height: 1.75; }
+  .find-us img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%; }
+
 .product {
   display: grid;
   grid-template-columns: 2;
