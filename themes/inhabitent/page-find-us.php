@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div class="container">
+
 <section class="find-us">
 
 <?php if( have_posts() ) :
@@ -19,8 +21,13 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-
 </section>
 
+<div class="sidebar">
 <?php get_sidebar();?>
+</div>
+
+</div>
+
+
 <?php get_footer();?>

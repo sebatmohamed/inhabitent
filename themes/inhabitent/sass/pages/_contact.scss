@@ -1,10 +1,19 @@
-.find-us {
-    padding: 50px;
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 50px;
+  margin-top: 30px;
+}
 
-    h2 {
+.find-us {
+  grid-column-start: 1;
+  padding-left: 50px;
+
+  h2 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 30px;
     padding-bottom: 20px;
+    font-family: 'Novecento-Bold';
   }
 
   p {
@@ -13,9 +22,47 @@
   }
 
   img {
-    width: 900px;
+    width: 700px;
     object-fit: cover;
     height: 350px;
     padding-bottom: 20px;
+  }
+}
+
+.sidebar {
+  grid-column-start: 2;
+  text-align: left;
+
+  h1 {
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Novecento-Bold';
+  }
+
+  p {
+    padding-bottom: 30px;
+  }
+
+  span {
+    font-family: 'Merriweather-Bold';
+  }
+
+  i {
+    padding-right: 5px;
+  }
+
+  .contact {
+    p:nth-child(2) {
+      color: #248a83;
+    }
+
+    p:nth-child(3) {
+      color: #248a83;
+    }
+  }
+
+  .archives p {
+    color: #248a83;
   }
 }

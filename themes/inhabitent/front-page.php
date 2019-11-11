@@ -82,7 +82,7 @@ foreach ($terms as $term):?>
     <br>
     <span><?php the_title();?></span>
     <br>
-    <?php echo wp_trim_words(get_the_excerpt(), 10, '...');?>
+    <p><?php echo wp_trim_words(get_the_excerpt(), 10, '...');?></p>
     </div>
 
     <?php endforeach;?> 
