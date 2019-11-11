@@ -8,11 +8,16 @@
     while( have_posts() ) :
         the_post(); ?>
     
-    <div class="archive-products">
+    <figure class="archive-products">
+
     <?php the_post_thumbnail('large');?>
-    <h2><?php the_title(); ?></h2>
-    <p><?php echo "$ " . get_field('price');?></p>
-    </div>    
+
+    <figcaption>
+         <h2><?php the_title(); ?><?php echo " $" . get_field('price');?></h2>
+        
+    </figcaption>
+   
+    </figure>    
 
     
     <!-- Loop ends -->

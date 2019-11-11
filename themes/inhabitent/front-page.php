@@ -18,7 +18,7 @@
     'hide_empty' => false,
 ));?>
 
-<div>
+<!-- <div>
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/do.svg" width="25%">
 <p>Go back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 </div>
@@ -37,13 +37,15 @@
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/wear.svg" width="25%">
 <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
 
-</div>
+</div> -->
 
 <?php
 
 foreach ($terms as $term):?>
 
-<div class="front-page-product-sections">
+<div>
+    <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
+    <p>Go back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
     <button class="front-page-product-sections-btn" href="<?php echo "product-type/" . $term->slug ;?>"> <?php echo $term->name ;?> </button>
 </div>
     

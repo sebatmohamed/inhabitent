@@ -33,33 +33,27 @@ h1 {
 
   div {
     position: relative;
-    border-right: 0.1px solid #a1a1a1;
-    border-left: 0.1px solid #a1a1a1;
-    border-top: 2px solid #a1a1a1;
-  }
+    border: 0.1px solid #a1a1a1;
+    height: 300px;
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  p {
-    text-align: center;
-  }
-
-  .front-page-product-sections {
-    margin: 0 auto; 
-    border: none; 
-
-
+    img {
+      display: block;
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     button {
       text-transform: uppercase;
       font-size: 14px;
       color: white;
       background-color: #248a83;
       padding: 10px;
-      position: relative;
+      margin: 0 auto;
+      display: block;
+    }
+
+    p {
+      text-align: center;
     }
   }
 }
@@ -78,7 +72,7 @@ h1 {
 
   span {
     text-transform: uppercase;
-    color: #248A83;
+    color: #248a83;
   }
 
   button {
@@ -94,9 +88,9 @@ h1 {
 
 .latest-adventures {
   display: grid;
-  grid-template-areas: 
-  "a a b b"
-  "a a c d";
+  grid-template-areas:
+    'a a b b'
+    'a a c d';
   grid-gap: 20px;
   padding: 50px;
 
