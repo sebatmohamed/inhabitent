@@ -2,10 +2,13 @@
   display: grid;
   grid-template-columns: 3;
 
-  img {
-    grid-column-start: 1;
-    width: 30px;
+  a {
     z-index: 9999;
+
+    img {
+      grid-column-start: 1;
+      width: 30px;
+    }
   }
 
   i {

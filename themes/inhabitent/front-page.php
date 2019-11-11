@@ -36,6 +36,7 @@
 <div>
 <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/wear.svg" width="25%">
 <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+
 </div>
 
 <?php
