@@ -289,23 +289,25 @@ main {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 50px;
-  margin-top: 30px; }
+  grid-template-columns: 2fr 1fr; }
 
 .find-us {
   grid-column-start: 1;
-  padding-left: 50px; }
+  padding-left: 50px;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey; }
   .find-us h2 {
     text-transform: uppercase;
     font-size: 30px;
     padding-bottom: 20px;
+    padding-top: 40px;
     font-family: 'Novecento-Bold'; }
   .find-us p {
     padding-bottom: 20px;
-    line-height: 1.75; }
+    line-height: 1.75;
+    padding-right: 20px; }
   .find-us img {
-    width: 700px;
+    width: 850px;
     -o-object-fit: cover;
        object-fit: cover;
     height: 350px;
@@ -313,12 +315,15 @@ main {
 
 .sidebar {
   grid-column-start: 2;
-  text-align: left; }
+  text-align: left;
+  border-top: 1px solid grey;
+  padding-left: 40px; }
   .sidebar h1 {
     text-align: left;
     padding-bottom: 20px;
-    padding-top: 20px;
-    font-family: 'Novecento-Bold'; }
+    padding-top: 50px;
+    font-family: 'Novecento-Bold';
+    font-size: 20px; }
   .sidebar p {
     padding-bottom: 30px; }
   .sidebar span {
@@ -330,7 +335,8 @@ main {
   .sidebar .contact p:nth-child(3) {
     color: #248a83; }
   .sidebar .archives p {
-    color: #248a83; }
+    color: #248a83;
+    padding-bottom: 10px; }
 
 .product {
   display: grid;

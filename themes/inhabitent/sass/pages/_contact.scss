@@ -1,28 +1,30 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 50px;
-  margin-top: 30px;
 }
 
 .find-us {
   grid-column-start: 1;
   padding-left: 50px;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
 
   h2 {
     text-transform: uppercase;
     font-size: 30px;
     padding-bottom: 20px;
+    padding-top: 40px;
     font-family: 'Novecento-Bold';
   }
 
   p {
     padding-bottom: 20px;
     line-height: 1.75;
+    padding-right: 20px;
   }
 
   img {
-    width: 700px;
+    width: 850px;
     object-fit: cover;
     height: 350px;
     padding-bottom: 20px;
@@ -32,12 +34,16 @@
 .sidebar {
   grid-column-start: 2;
   text-align: left;
+  border-top: 1px solid grey;
+  padding-left: 40px;
+
 
   h1 {
     text-align: left;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 50px;
     font-family: 'Novecento-Bold';
+    font-size: 20px;
   }
 
   p {
@@ -64,5 +70,6 @@
 
   .archives p {
     color: #248a83;
+    padding-bottom: 10px;
   }
 }
