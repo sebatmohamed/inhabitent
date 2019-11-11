@@ -1,8 +1,15 @@
-.journal-posts {
+.container {
   display: grid;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1.7fr 1fr;
+}
+
+.journal-posts {
+  grid-column-start: 1;
   padding-left: 50px;
-  padding-top: 20px;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-top: 40px;
+  padding-right: none;
 
   .photo-text, p {
     grid-column-start: 1;
@@ -12,8 +19,8 @@
     position: relative;
 
     img {
-      width: 772px;
-      height: 400px;
+      width: 730px;
+      height: 450px;
       object-fit: cover;
     }
 
@@ -33,6 +40,8 @@
   p {
       line-height: 1.75;
       padding-bottom: 20px;
+      text-align: left;
+      padding-right: 100px;
   }
 
   section {

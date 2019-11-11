@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<div class="journal-posts">
+<div class="container">
+
+<section class="journal-posts">
 
 <?php if( have_posts() ) :
 
@@ -26,7 +28,12 @@
         <p>No posts found</p>
 <?php endif;?>
 
+</section>
+
+<div class="sidebar">
+<?php get_sidebar();?>
 </div>
 
-<?php get_sidebar();?>
+</div>
+
 <?php get_footer();?>
