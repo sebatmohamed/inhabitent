@@ -1,0 +1,49 @@
+.journal-posts {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  padding-left: 50px;
+  padding-top: 20px;
+
+  .photo-text, p {
+    grid-column-start: 1;
+  }
+
+  .photo-text {
+    position: relative;
+
+    img {
+      width: 772px;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      word-wrap: break-word;
+      position: absolute;
+      top: 0;
+      color: white;
+      font-size: 20px;
+      background-color: #248a83;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  p {
+      line-height: 1.75;
+      padding-bottom: 20px;
+  }
+
+  section {
+      grid-column-start: 1;
+      padding-bottom: 60px;
+
+      button {
+          text-transform: uppercase;
+          padding: 8px 15px;
+          background: none;
+          font-size: 14px;
+      }
+  }
+}
