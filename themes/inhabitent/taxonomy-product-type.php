@@ -1,16 +1,32 @@
 <?php get_header(); ?>
 
+<section class="all-products">
+
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
-    <h2><?php the_title(); ?></h2>
+
+<figure class="archive-products">
+
     <?php the_post_thumbnail('large');?>
-    <h3><?php the_permalink();?></h3>
-    <?php the_content(); ?>
-    <?php echo "$ " . get_field('price');?>
+
+    <div class="grey-space"></div>
+
+    <figcaption>
+    <hr class="dotted">
+    <a href="<?php echo get_permalink();?>">
+    <div>
+        <p><?php the_title();?></p>
+        <p><?php echo " $" . get_field('price');?></p>
+    </div>
+    
+    </a>
+
+    </figcaption>
+   
+   </figure>  
     
     <!-- Loop ends -->
     <?php endwhile;?>
@@ -20,6 +36,9 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
+</section>
+
 
     
 <?php get_footer();?>

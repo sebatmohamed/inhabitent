@@ -3,12 +3,23 @@
 
 <h1>Shop stuff</h1>
 
-<div class="links">
-   <a><p>Do</p></a>
-<a><p>Eat</p></a>
-<a><p>Sleep</p></a>
-<a><p>Wear</p></a> 
+<?php $terms = get_terms( array(
+    'taxonomy' => 'product-type',
+    'hide_empty' => false,
+));?>
+
+<div class="links"> 
+
+<?php
+foreach ($terms as $term):?>
+
+<a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"> <?php echo $term->name ;?></a>
+
+<?php endforeach;?>
+
 </div>
+
+
 
 <hr class="dashed">
 
@@ -28,8 +39,8 @@
     <div class="grey-space"></div>
 
     <figcaption>
-        <hr class="dotted"></hr>
-    <a href="<?php echo 'product-type/';?>">
+        <hr class="dotted">
+    <a href="<?php echo get_permalink();?>">
     <div>
         <p><?php the_title();?></p>
         <p><?php echo " $" . get_field('price');?></p>

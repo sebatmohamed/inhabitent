@@ -21,6 +21,7 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
 </section>
 
 <div class="sidebar">
