@@ -18,27 +18,6 @@
     'hide_empty' => false,
 ));?>
 
-<!-- <div>
-<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/do.svg" width="25%">
-<p>Go back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-</div>
-
-<div>
-<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/eat.svg" width="25%">
-<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-</div>
-
-<div>
-<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/sleep.svg" width="25%">
-<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-</div>
-
-<div>
-<img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/wear.svg" width="25%">
-<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-
-</div> -->
-
 <?php
 
 foreach ($terms as $term):?>
@@ -70,33 +49,29 @@ foreach ($terms as $term):?>
     <?php the_posts_navigation();?>
 
     <div class="inhabitent-journal">
-    
-    <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/van-camper.jpg">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/warm-cocktail.jpg">
-    <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/healthy-camp-food.jpg">
+
 
     <?php
     $args = array( 'numberposts' => 3, 'order' => 'ASC', 'orderby' => 'date');
     $postslist = get_posts( $args );
     foreach ($postslist as $post): setup_postdata($post);?>
+    
+    <section>
 
+    <?php the_post_thumbnail('large');?>
     <div>
     <?php the_date();?>
     <br>
-    <span><?php the_title();?></span>
+    <h1><?php the_title();?></h1>
     <br>
-    <p><?php echo wp_trim_words(get_the_excerpt(), 10, '...');?></p>
-    </div>
-
-    <?php endforeach;?> 
-
-    <?php 
-    
-    foreach ($terms as $term):?>
-
+    <!-- <p><?php echo wp_trim_words(get_the_excerpt(), 10, '...');?></p> -->
     <section class="front-page-journal-sections">
         <button class="front-page-journal-sections-btn">Read entry</button>
     </section>
+    </div>
+
+    </section>
+
 
     <?php endforeach;?> 
 

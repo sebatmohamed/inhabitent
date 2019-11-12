@@ -1,5 +1,16 @@
 <?php get_header(); ?>
 
+<h1>Shop stuff</h1>
+
+<div class="links">
+   <a><p>Do</p></a>
+<a><p>Eat</p></a>
+<a><p>Sleep</p></a>
+<a><p>Wear</p></a> 
+</div>
+
+<hr class="dashed">
+
 <section class= "all-products">
 
 <?php if( have_posts() ) :
@@ -7,13 +18,24 @@
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
+
     
     <figure class="archive-products">
 
-    <?php the_post_thumbnail('large');?>
+     <?php the_post_thumbnail('large');?>
+
+    <div class="grey-space"></div>
 
     <figcaption>
-         <h2><?php the_title(); ?><?php echo " $" . get_field('price');?></h2>
+        <hr class="dotted"></hr>
+    <a href="<?php echo 'product-type/';?>">
+    <div>
+        <p><?php the_title();?></p>
+        <p><?php echo " $" . get_field('price');?></p>
+    </div>
+    
+    </a>
+        
         
     </figcaption>
    
