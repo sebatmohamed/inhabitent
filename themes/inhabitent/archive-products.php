@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<hr>
 
 <h1>Shop stuff</h1>
 
