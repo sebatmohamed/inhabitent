@@ -13,7 +13,6 @@
         <img src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent-white.svg">
     </a>
 
-<i class="fas fa-search"></i> 
 <?php wp_nav_menu(array('theme_location' => 'primary'));?>
 
 </div>

@@ -16,7 +16,7 @@
     </div>
     <p><?php echo wp_trim_words(get_the_content(), 60, ' [...]');?></p>
     <section>
-    <button>Read more <i class="fas fa-long-arrow-alt-right"></i></button>
+    <a href="<?php echo get_permalink();?>"><button>Read more <i class="fas fa-long-arrow-alt-right"></i></button></a>
     </section>
     
     <!-- Loop ends -->

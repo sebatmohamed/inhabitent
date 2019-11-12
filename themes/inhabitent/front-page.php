@@ -65,9 +65,8 @@ foreach ($terms as $term):?>
     <h1><?php the_title();?></h1>
     <br>
     <!-- <p><?php echo wp_trim_words(get_the_excerpt(), 10, '...');?></p> -->
-    <section class="front-page-journal-sections">
-        <button class="front-page-journal-sections-btn">Read entry</button>
-    </section>
+    
+    <button class="front-page-journal-sections-btn">Read entry</button>
     </div>
 
     </section>

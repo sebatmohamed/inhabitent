@@ -1,12 +1,19 @@
 <?php get_header(); ?>
 
+<div class="container">
+
+<section class="journal-posts">
+
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail('large');?>
+    <div class="photo-text">
+       <h2><?php the_title(); ?></h2>
+    <?php the_post_thumbnail('large');?> 
+    </div>
+    
     <?php the_content(); ?>
     
     <!-- Loop ends -->
@@ -18,5 +25,13 @@
         <p>No posts found</p>
 <?php endif;?>
 
+</section>
+
+
+<div class="sidebar">
+<?php get_sidebar();?>
+</div>
+
+</div>
     
 <?php get_footer();?>
