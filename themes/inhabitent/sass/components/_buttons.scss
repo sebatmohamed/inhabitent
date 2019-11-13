@@ -1,6 +1,9 @@
+button {
+  text-transform: uppercase;
+}
+
 .shop-stuff {
   button {
-    text-transform: uppercase;
     font-size: 14px;
     color: white;
     background-color: #248a83;
@@ -12,7 +15,6 @@
 
 .inhabitent-journal {
   button {
-    text-transform: uppercase;
     font-size: 14px;
     color: black;
     background: none;
@@ -23,7 +25,6 @@
 
 .latest-adventures {
   button {
-    text-transform: uppercase;
     font-size: 14px;
     color: white;
     background-color: #248a83;
@@ -34,7 +35,6 @@
 
 .price {
   button {
-    text-transform: uppercase;
     border-radius: 0;
     padding: 8px 15px;
     background: none;
@@ -50,7 +50,6 @@
   section {
     padding-bottom: 60px;
     button {
-      text-transform: uppercase;
       padding: 8px 15px;
       background: none;
       font-size: 14px;
@@ -60,7 +59,6 @@
 }
 
 input.wpcf7-form-control.wpcf7-submit {
-  text-transform: uppercase;
   font-size: 12px;
   color: white;
   background-color: #248a83;

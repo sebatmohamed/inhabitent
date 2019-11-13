@@ -271,8 +271,10 @@ form textarea {
   width: 60%;
   height: 180px; }
 
+button {
+  text-transform: uppercase; }
+
 .shop-stuff button {
-  text-transform: uppercase;
   font-size: 14px;
   color: white;
   background-color: #248a83;
@@ -281,7 +283,6 @@ form textarea {
   display: block; }
 
 .inhabitent-journal button {
-  text-transform: uppercase;
   font-size: 14px;
   color: black;
   background: none;
@@ -289,7 +290,6 @@ form textarea {
   position: relative; }
 
 .latest-adventures button {
-  text-transform: uppercase;
   font-size: 14px;
   color: white;
   background-color: #248a83;
@@ -297,7 +297,6 @@ form textarea {
   position: relative; }
 
 .price button {
-  text-transform: uppercase;
   border-radius: 0;
   padding: 8px 15px;
   background: none;
@@ -309,14 +308,12 @@ form textarea {
 .journal-posts section {
   padding-bottom: 60px; }
   .journal-posts section button {
-    text-transform: uppercase;
     padding: 8px 15px;
     background: none;
     font-size: 14px;
     grid-column-start: 1; }
 
 input.wpcf7-form-control.wpcf7-submit {
-  text-transform: uppercase;
   font-size: 12px;
   color: white;
   background-color: #248a83;
