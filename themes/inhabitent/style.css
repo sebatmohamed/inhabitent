@@ -195,7 +195,7 @@ main {
 .adventures-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 40px 75px 100px;
+  padding: 40px 50px 100px;
   grid-gap: 30px; }
 
 .single-adventure-grid {
@@ -295,8 +295,7 @@ button {
   font-size: 14px;
   color: black;
   background: none;
-  padding: 5px 15px;
-  position: relative; }
+  padding: 5px 15px; }
 
 .latest-adventures button {
   font-size: 14px;
@@ -548,9 +547,6 @@ h1 {
 .product-type-header p {
   padding-bottom: 40px;
   text-align: center; }
-
-h1 {
-  padding-bottom: 20px; }
 
 .adventure div {
   position: relative; }

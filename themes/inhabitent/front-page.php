@@ -65,7 +65,10 @@ foreach ($terms as $term):?>
     <br>
     <!-- <p><?php echo wp_trim_words(get_the_excerpt(), 10, '...');?></p> -->
     
-    <button class="front-page-journal-sections-btn">Read entry</button>
+    <section>
+    <a href="<?php echo get_permalink();?>"><button>Read entry</button></a>
+    </section>
+
     </div>
 
     </section>
