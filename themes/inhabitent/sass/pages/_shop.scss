@@ -41,18 +41,6 @@
       padding-right: 50px;
       padding-bottom: 20px;
     }
-
-    button {
-      text-transform: uppercase;
-      border-radius: 0;
-      padding: 8px 15px;
-      background: none;
-      border: 1px solid black;
-    }
-
-    button i {
-      padding-right: 5px;
-    }
   }
 }
 
@@ -137,5 +125,16 @@ h1 {
         }
       }
     }
+  }
+}
+
+.product-header {
+  h1 {
+    padding-bottom: 40px;
+
+  }
+  p {
+    padding-bottom: 40px;
+    text-align: center;
   }
 }

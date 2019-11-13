@@ -19,8 +19,6 @@ foreach ($terms as $term):?>
 
 </div>
 
-
-
 <hr class="dashed">
 
 <section class= "all-products">

@@ -1,4 +1,17 @@
 <?php get_header(); ?>
+<hr>
+
+<div class="product-header">
+
+<h1>Hello</h1>
+
+<p>lorem ipsum</p>
+
+</div>
+
+
+
+<hr class="dashed">
 
 <section class="all-products">
 
