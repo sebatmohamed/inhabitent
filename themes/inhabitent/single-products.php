@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="product">
+<section class="single-product-grid">
 
 <?php if( have_posts() ) :
 

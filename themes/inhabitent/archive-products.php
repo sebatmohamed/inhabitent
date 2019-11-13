@@ -8,7 +8,7 @@
     'hide_empty' => false,
 ));?>
 
-<div class="links"> 
+<div class="product-type-links"> 
 
 <?php
 foreach ($terms as $term):?>

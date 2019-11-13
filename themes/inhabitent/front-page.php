@@ -50,7 +50,6 @@ foreach ($terms as $term):?>
 
     <div class="inhabitent-journal">
 
-
     <?php
     $args = array( 'numberposts' => 3, 'order' => 'ASC', 'orderby' => 'date');
     $postslist = get_posts( $args );

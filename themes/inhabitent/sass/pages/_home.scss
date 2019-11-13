@@ -26,11 +26,6 @@ h1 {
 }
 
 .shop-stuff {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
-  padding: 50px;
-
   div {
     position: relative;
     border: 0.1px solid #a1a1a1;
@@ -54,11 +49,6 @@ h1 {
 }
 
 .inhabitent-journal {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding: 50px;
-
   div {
     height: 120px;
     border: 1px solid #a1a1a1;
@@ -87,33 +77,8 @@ h1 {
 }
 
 .latest-adventures {
-  display: grid;
-  grid-template-areas:
-    'a a b b'
-    'a a c d';
-  grid-gap: 20px;
-  padding: 50px;
-
   img {
     width: 100%;
     object-fit: cover;
-  }
-
-  .item1 {
-    grid-area: a;
-    height: 100%;
-  }
-
-  .item2 {
-    grid-area: b;
-    height: 250px;
-  }
-
-  .item3 {
-    grid-area: c;
-  }
-
-  .item4 {
-    grid-area: d;
   }
 }

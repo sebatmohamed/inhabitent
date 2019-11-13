@@ -1,0 +1,73 @@
+// home page
+
+.shop-stuff {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  padding: 50px;
+}
+
+.inhabitent-journal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 50px;
+}
+
+.latest-adventures {
+  display: grid;
+  grid-template-areas:
+    'a a b b'
+    'a a c d';
+  grid-gap: 20px;
+  padding: 50px;
+
+  .item1 {
+    grid-area: a;
+    height: 100%;
+  }
+
+  .item2 {
+    grid-area: b;
+    height: 250px;
+  }
+
+  .item3 {
+    grid-area: c;
+  }
+
+  .item4 {
+    grid-area: d;
+  }
+}
+
+//about page
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+}
+
+//contact page
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+//single products page
+
+.single-product-grid {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-gap: 40px;
+    padding: 50px;
+    justify-items: center;
+    line-height: 1.75;
+}
+
+//shop page
+
+
+
