@@ -122,10 +122,9 @@ h1, h2, h3, h4, h5, h6 {
     grid-column-start: 3; }
     .nav .menu-main-container .menu {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       z-index: 9999;
       bottom: 0;
-      justify-items: right;
       width: 60%;
       margin: 0 auto; }
     .nav .menu-main-container a {
@@ -192,6 +191,16 @@ main {
 .journal-posts-grid {
   display: grid;
   grid-template-columns: 1.7fr 1fr; }
+
+.adventures-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 75px 100px;
+  grid-gap: 30px; }
+
+.single-adventure-grid {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr; }
 
 footer {
   display: grid;
@@ -318,6 +327,14 @@ input.wpcf7-form-control.wpcf7-submit {
   color: white;
   background-color: #248a83;
   padding: 0px 15px; }
+
+.adventure section {
+  padding-bottom: 60px; }
+  .adventure section button {
+    padding: 8px 15px;
+    background: none;
+    font-size: 14px;
+    grid-column-start: 1; }
 
 .home-banner {
   width: 100%;
@@ -531,6 +548,72 @@ h1 {
 .product-type-header p {
   padding-bottom: 40px;
   text-align: center; }
+
+h1 {
+  padding-bottom: 20px; }
+
+.adventure div {
+  position: relative; }
+  .adventure div img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: brightness(75%);
+            filter: brightness(75%); }
+  .adventure div p,
+  .adventure div section {
+    position: absolute;
+    top: 0;
+    padding: 20px; }
+  .adventure div p {
+    color: white;
+    font-size: 30px;
+    margin-top: 40px; }
+  .adventure div section {
+    margin-top: 90px; }
+    .adventure div section button {
+      color: white; }
+
+.single-adventure {
+  width: 100%;
+  height: 760px; }
+  .single-adventure img {
+    width: 100%;
+    height: 800px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%); }
+
+.single-adventure-grid h3 {
+  text-align: left;
+  font-size: 35px;
+  grid-column-start: 2; }
+
+.single-adventure-grid p {
+  text-align: justify;
+  grid-column-start: 2;
+  line-height: 1.75;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+
+.single-adventure-grid section {
+  grid-column-start: 2;
+  padding-bottom: 50px;
+  padding-top: 15px; }
+  .single-adventure-grid section button {
+    border-radius: 0;
+    padding: 8px 15px;
+    background: none;
+    border: 1px solid black; }
+  .single-adventure-grid section button i {
+    padding-right: 5px; }
 
 .journal-posts {
   grid-column-start: 1;

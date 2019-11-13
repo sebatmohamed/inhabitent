@@ -24,10 +24,9 @@
 
     .menu {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       z-index: 9999;
       bottom: 0;
-      justify-items: right;
       width: 60%;
       margin: 0 auto;
     }

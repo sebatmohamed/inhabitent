@@ -1,0 +1,86 @@
+h1 {
+  padding-bottom: 20px;
+}
+
+.adventure div {
+  position: relative;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: brightness(75%);
+  }
+
+  p,
+  section {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+  }
+
+  p {
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  section {
+    margin-top: 90px;
+    button {
+      color: white;
+    }
+  }
+}
+
+.single-adventure {
+    width: 100%;
+    height: 760px;
+    
+  img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    filter: brightness(50%);
+  }
+}
+
+.single-adventure-grid {
+
+  h3 {
+    text-align: left;
+    font-size: 35px;
+    grid-column-start: 2;
+  }
+
+  p {
+    text-align: justify;
+    grid-column-start: 2;
+    line-height: 1.75;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  section {
+    grid-column-start: 2;
+    padding-bottom: 50px;
+    padding-top: 15px;
+    button {
+      border-radius: 0;
+      padding: 8px 15px;
+      background: none;
+      border: 1px solid black;
+    }
+
+    button i {
+      padding-right: 5px;
+    }
+  }
+}
+
+

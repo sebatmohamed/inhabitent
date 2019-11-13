@@ -57,7 +57,7 @@ function inhabitent_widgets() {
 
 add_action('widgets_init', 'inhabitent_widgets');
 
-//Products Post Type
+//Products/Adventures Post Type
 
 function inhabitent_post_types() {
     register_post_type('products', array(
@@ -73,6 +73,21 @@ function inhabitent_post_types() {
             'singular_name' => "Product"
         ),
         'menu_icon' => 'dashicons-cart'
+    ));
+
+    register_post_type('adventures', array(
+        'has_archive' => true,
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+        'public' => true,
+        'labels' => array(
+            'name' => 'Adventures',
+            'add_new_items' => 'Add New Adventure',
+            'edit_item' => 'Edit Adventure',
+            'all_items' => "All Adventures",
+            'singular_name' => "Adventure"
+        ),
+        'menu_icon' => 'dashicons-palmtree'
     ));
 }
 
@@ -115,25 +130,6 @@ function inhabitent_product_type() {
   add_action( 'init', 'inhabitent_product_type' );
 
   //Adventures Post Type
-
-  function inhabitent_adventures_post_types() {
-    register_post_type('adventures', array(
-        'has_archive' => true,
-        'show_in_rest' => true,
-        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-        'public' => true,
-        'labels' => array(
-            'name' => 'Latest Adventures',
-            'add_new_items' => 'Add New Adventure',
-            'edit_item' => 'Edit Adventure',
-            'all_items' => "All Adventures",
-            'singular_name' => "Adventure"
-        ),
-        'menu_icon' => 'dashicons-palmtree'
-    ));
-}
-
-add_action('init', 'inhabitent_adventures_post_types');
 
 
 

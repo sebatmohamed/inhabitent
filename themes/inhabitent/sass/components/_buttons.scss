@@ -64,3 +64,15 @@ input.wpcf7-form-control.wpcf7-submit {
   background-color: #248a83;
   padding: 0px 15px;
 }
+
+.adventure {
+  section {
+    padding-bottom: 60px;
+    button {
+      padding: 8px 15px;
+      background: none;
+      font-size: 14px;
+      grid-column-start: 1;
+    }
+  }
+}

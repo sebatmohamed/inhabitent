@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 <hr>
 
-<h1>Latest Adventures</h1>
 
-
-<section class= "adventures-grid">
+<section>
 
 <?php if( have_posts() ) :
 
@@ -12,12 +10,22 @@
     while( have_posts() ) :
         the_post(); ?>
 
+
+    <div class="single-adventure">
+    <?php the_post_thumbnail('large');?>
+    </div>
+
+   <div class="single-adventure-grid">
+   <h3><?php the_title();?></h3>
+   <?php the_content(); ?>
+   <section>
+    <button><i class="fab fa-facebook-f"></i> Like</button>
+   <button><i class="fab fa-twitter"></i> Tweet</button>
+   <button><i class="fab fa-pinterest"></i> Pin</button>
+   </section>
+
+    </div>
     
-
-     <?php the_post_thumbnail('large');?>
-     <p><?php the_title();?></p>
-     <p><?php the_content();?></p>
-
     
     <!-- Loop ends -->
     <?php endwhile;?>

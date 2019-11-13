@@ -3,20 +3,31 @@
 
 <h1>Latest Adventures</h1>
 
+<hr class="dashed">
 
-<section class= "adventures-grid">
+<section class="adventures-grid">
 
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-
     
+    <figure class="adventure">
 
-     <?php the_post_thumbnail('large');?>
-     <p><?php the_title();?></p>
-     <p><?php the_content();?></p>
+    <div>    
+    <?php the_post_thumbnail('large');?>
+    <p><?php the_title();?></p>
+
+    <section>
+    <a href="<?php echo get_permalink();?>"><button>Read more</button></a>
+    </section>
+
+    </div>
+
+
+    </figure> 
+   
 
     
     <!-- Loop ends -->

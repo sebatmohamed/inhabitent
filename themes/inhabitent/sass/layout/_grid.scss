@@ -89,3 +89,17 @@ main {
   display: grid;
   grid-template-columns: 1.7fr 1fr;
 }
+
+//adventures page
+
+.adventures-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 75px 100px;
+  grid-gap: 30px;
+}
+
+.single-adventure-grid {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+}

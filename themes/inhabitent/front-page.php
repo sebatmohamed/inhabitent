@@ -87,7 +87,9 @@ foreach ($terms as $term):?>
     <img class='item2' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
     <img class='item3' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg">
     <img class='item4' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/night-sky.jpg">
-    <button>More adventures</button>
+    <section>
+    <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
+    </section>
 </div>
 
 
