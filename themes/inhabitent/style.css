@@ -129,7 +129,8 @@ h1, h2, h3, h4, h5, h6 {
       width: 60%;
       margin: 0 auto; }
     .nav .menu-main-container a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #248A83; }
 
 .shop-stuff {
   display: grid;
@@ -176,8 +177,21 @@ main {
   justify-items: center;
   line-height: 1.75; }
 
-.menu li {
-  color: #248A83; }
+.product-type-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 20%;
+  margin: 0 auto; }
+
+.taxonomy-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px; }
+
+.journal-posts-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr; }
 
 footer {
   display: grid;
@@ -292,11 +306,14 @@ form textarea {
 .price button i {
   padding-right: 5px; }
 
-.journal-posts section button {
-  text-transform: uppercase;
-  padding: 8px 15px;
-  background: none;
-  font-size: 14px; }
+.journal-posts section {
+  padding-bottom: 60px; }
+  .journal-posts section button {
+    text-transform: uppercase;
+    padding: 8px 15px;
+    background: none;
+    font-size: 14px;
+    grid-column-start: 1; }
 
 input.wpcf7-form-control.wpcf7-submit {
   text-transform: uppercase;
@@ -457,10 +474,6 @@ h1 {
   margin-top: 30px; }
 
 .product-type-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 20%;
-  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px; }
   .product-type-links a {
@@ -475,40 +488,36 @@ h1 {
   margin-left: 50px;
   margin-right: 50px; }
 
-.all-products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 30px;
+.taxonomy-products-grid {
   padding: 30px 50px 80px 50px; }
-  .all-products .archive-products {
+  .taxonomy-products-grid .archive-products {
     grid-template-rows: 250px 0.5fr 0.5fr;
     width: 100%;
-    height: 300px; }
-    .all-products .archive-products img {
+    height: 350px; }
+    .taxonomy-products-grid .archive-products img {
       grid-row-start: 1;
       width: 100%;
-      height: 250px;
+      height: 300px;
       -o-object-fit: cover;
          object-fit: cover; }
-    .all-products .archive-products .grey-space {
+    .taxonomy-products-grid .archive-products .grey-space {
       grid-row-start: 2;
       height: 3px;
       background: #a1a1a1; }
-    .all-products .archive-products figcaption {
+    .taxonomy-products-grid .archive-products figcaption {
       grid-row-start: 3;
       padding: 15px;
       border: 1px solid #a1a1a1; }
-      .all-products .archive-products figcaption .dotted {
+      .taxonomy-products-grid .archive-products figcaption .dotted {
         border: 0.5px dotted black;
         margin-left: 50px;
         width: 70%;
         position: relative; }
-      .all-products .archive-products figcaption a {
+      .taxonomy-products-grid .archive-products figcaption a {
         text-decoration: none;
         color: black;
         position: relative; }
-        .all-products .archive-products figcaption a div {
+        .taxonomy-products-grid .archive-products figcaption a div {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -516,19 +525,15 @@ h1 {
               -ms-flex-pack: justify;
                   justify-content: space-between;
           margin-top: -22px; }
-          .all-products .archive-products figcaption a div p {
+          .taxonomy-products-grid .archive-products figcaption a div p {
             background: white; }
 
-.product-header h1 {
+.product-type-header h1 {
   padding-bottom: 40px; }
 
-.product-header p {
+.product-type-header p {
   padding-bottom: 40px;
   text-align: center; }
-
-.container {
-  display: grid;
-  grid-template-columns: 1.7fr 1fr; }
 
 .journal-posts {
   grid-column-start: 1;
@@ -561,6 +566,3 @@ h1 {
     padding-bottom: 20px;
     text-align: left;
     padding-right: 100px; }
-  .journal-posts section {
-    grid-column-start: 1;
-    padding-bottom: 60px; }

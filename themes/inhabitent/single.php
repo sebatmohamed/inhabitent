@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="journal-posts-grid">
 
 <section class="journal-posts">
 

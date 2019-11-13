@@ -21,7 +21,7 @@ foreach ($terms as $term):?>
 
 <hr class="dashed">
 
-<section class= "all-products">
+<section class= "taxonomy-products-grid">
 
 <?php if( have_posts() ) :
 

@@ -1,8 +1,3 @@
-.container {
-  display: grid;
-  grid-template-columns: 1.7fr 1fr;
-}
-
 .journal-posts {
   grid-column-start: 1;
   padding-left: 50px;
@@ -42,10 +37,5 @@
       padding-bottom: 20px;
       text-align: left;
       padding-right: 100px;
-  }
-
-  section {
-      grid-column-start: 1;
-      padding-bottom: 60px;
   }
 }

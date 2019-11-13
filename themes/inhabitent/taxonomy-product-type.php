@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <hr>
 
-<div class="product-header">
+<div class="product-type-header">
 
 <h1>Hello</h1>
 
@@ -9,11 +9,9 @@
 
 </div>
 
-
-
 <hr class="dashed">
 
-<section class="all-products">
+<section class="taxonomy-products-grid">
 
 <?php if( have_posts() ) :
 

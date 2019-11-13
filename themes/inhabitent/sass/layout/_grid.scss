@@ -58,16 +58,34 @@ main {
 //single products page
 
 .single-product-grid {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
-    grid-gap: 40px;
-    padding: 50px;
-    justify-items: center;
-    line-height: 1.75;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  grid-gap: 40px;
+  padding: 50px;
+  justify-items: center;
+  line-height: 1.75;
 }
 
 //shop page
 
+.product-type-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 20%;
+  margin: 0 auto;
+}
 
+.taxonomy-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
 
+//journal page
+
+.journal-posts-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+}
