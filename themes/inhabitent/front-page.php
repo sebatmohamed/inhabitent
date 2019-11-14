@@ -25,7 +25,10 @@ foreach ($terms as $term):?>
 <div>
     <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
     <p><?php echo category_description(2);?></p>
+    <a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>">
     <button class="front-page-product-sections-btn" href="<?php echo "product-type/" . $term->slug ;?>"> <?php echo $term->name ;?></button>
+    </a>
+    
 </div>
     
 <?php endforeach;?>

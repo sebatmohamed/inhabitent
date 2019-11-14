@@ -21,14 +21,14 @@
   .menu-main-container {
     display: grid;
     grid-column-start: 3;
+    justify-items: end;
 
     .menu {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       z-index: 9999;
       bottom: 0;
       width: 60%;
-      margin: 0 auto;
     }
 
     a {

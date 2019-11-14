@@ -119,14 +119,14 @@ h1, h2, h3, h4, h5, h6 {
     color: white; }
   .nav .menu-main-container {
     display: grid;
-    grid-column-start: 3; }
+    grid-column-start: 3;
+    justify-items: end; }
     .nav .menu-main-container .menu {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       z-index: 9999;
       bottom: 0;
-      width: 60%;
-      margin: 0 auto; }
+      width: 60%; }
     .nav .menu-main-container a {
       text-decoration: none;
       color: #248A83; }
@@ -237,7 +237,7 @@ footer {
 .sidebar {
   grid-column-start: 2;
   text-align: left;
-  border-top: 1px solid grey;
+  border-top: 1px solid #e1e1e1;
   padding-left: 40px; }
   .sidebar h1 {
     text-align: left;
@@ -373,6 +373,8 @@ h1 {
     line-height: 1.75;
     padding-top: 15px;
     padding-bottom: 15px; }
+  .shop-stuff div a {
+    text-decoration: none; }
 
 .inhabitent-journal div {
   height: 120px;
@@ -439,8 +441,8 @@ main p {
 .find-us {
   grid-column-start: 1;
   padding-left: 50px;
-  border-top: 1px solid grey;
-  border-right: 1px solid grey; }
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1; }
   .find-us h2 {
     text-transform: uppercase;
     font-size: 30px;
@@ -614,8 +616,8 @@ h1 {
 .journal-posts {
   grid-column-start: 1;
   padding-left: 50px;
-  border-top: 1px solid grey;
-  border-right: 1px solid grey;
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
   padding-top: 40px;
   padding-right: none; }
   .journal-posts .photo-text, .journal-posts p {
