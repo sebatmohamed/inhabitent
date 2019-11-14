@@ -21,23 +21,8 @@
   "a a c d";
   grid-gap: 20px;
   padding: 50px;
-
-  div > img:first-child {
-    grid-area: a;
-  }
-
-  div > img:nth-child(2) {
-    grid-area: b;
-  }
-
-  div > img:nth-child(3) {
-    grid-area: c;
-  }
-
-  div > img:last-child {
-    grid-area: d;
-  }
 }
+
 
 
 //about page

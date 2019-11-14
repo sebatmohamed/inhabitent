@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav {
   display: grid;
-  grid-template-columns: 3;
+  grid-template-columns: repeat(3, 1fr);
   padding: 10px 50px 0px 50px;
   border-bottom: 1px solid #e1e1e1; }
   .nav a {
@@ -114,21 +114,29 @@ h1, h2, h3, h4, h5, h6 {
     .nav a img {
       grid-column-start: 1;
       width: 30px; }
-  .nav i {
-    grid-column-start: 2;
-    z-index: 9999;
-    color: white; }
-  .nav .menu-main-container {
-    display: grid;
+  .nav .nav-items {
     grid-column-start: 3;
-    justify-items: end; }
-    .nav .menu-main-container .menu {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 9999; }
+    .nav .nav-items #ajaxsearchlite1 {
+      grid-column-start: 3;
+      width: 25%;
+      margin-top: -5px;
+      color: white; }
+    .nav .nav-items .menu-main-container .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       z-index: 9999;
-      bottom: 0;
-      width: 60%; }
-    .nav .menu-main-container a {
+      bottom: 0; }
+      .nav .nav-items .menu-main-container .menu li {
+        padding-right: 15px; }
+    .nav .nav-items .menu-main-container a {
       text-decoration: none;
       color: #248A83; }
 
@@ -149,14 +157,6 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-areas: "a a b b" "a a c d";
   grid-gap: 20px;
   padding: 50px; }
-  .latest-adventures div > img:first-child {
-    grid-area: a; }
-  .latest-adventures div > img:nth-child(2) {
-    grid-area: b; }
-  .latest-adventures div > img:nth-child(3) {
-    grid-area: c; }
-  .latest-adventures div > img:last-child {
-    grid-area: d; }
 
 main {
   display: grid;
@@ -560,29 +560,32 @@ h1 {
 
 .adventure div {
   position: relative; }
-  .adventure div img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 550px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-filter: brightness(75%);
-            filter: brightness(75%); }
-  .adventure div p,
-  .adventure div section {
-    position: absolute;
-    top: 0;
-    padding: 20px; }
-  .adventure div p {
-    color: white;
-    font-size: 30px;
-    margin-top: 40px; }
-  .adventure div section {
-    margin-top: 90px; }
-    .adventure div section button {
-      color: white; }
+
+.adventure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%); }
+
+.adventure p, .adventure section {
+  position: absolute;
+  top: 0;
+  padding: 20px; }
+
+.adventure p {
+  color: white;
+  font-size: 30px;
+  margin-top: 40px; }
+
+.adventure section {
+  margin-top: 90px; }
+  .adventure section button {
+    color: white; }
 
 .single-adventure {
   width: 100%;

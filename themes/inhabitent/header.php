@@ -12,9 +12,11 @@
     <a href="<?php echo get_home_url();?>">
         <img src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent-white.svg">
     </a>
-
-<?php wp_nav_menu(array('theme_location' => 'primary'));?>
-
+    <div class="nav-items">
+        <?php wp_nav_menu(array('theme_location' => 'primary'));?>
+        <?php echo get_search_form();?>  
+    </div>
+    
 </div>
 
 <!-- <h1><?php bloginfo('name');?></h1> -->

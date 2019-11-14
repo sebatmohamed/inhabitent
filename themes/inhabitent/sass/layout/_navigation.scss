@@ -1,6 +1,6 @@
 .nav {
   display: grid;
-  grid-template-columns: 3;
+  grid-template-columns: repeat(3, 1fr);
   padding: 10px 50px 0px 50px;
   border-bottom: 1px solid #e1e1e1;
 
@@ -13,28 +13,34 @@
     }
   }
 
-  i {
-    grid-column-start: 2;
-    z-index: 9999;
-    color: white;
-  }
-
-  .menu-main-container {
-    display: grid;
+  .nav-items {
     grid-column-start: 3;
-    justify-items: end;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 9999;
 
-    .menu {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      z-index: 9999;
-      bottom: 0;
-      width: 60%;
+    #ajaxsearchlite1 {
+      grid-column-start: 3;
+      width: 25%;
+      margin-top: -5px;
+      color: white;
     }
 
-    a {
-      text-decoration: none;
-      color: #248A83;
+    .menu-main-container {  
+      .menu {
+        display: flex;
+        z-index: 9999;
+        bottom: 0;
+
+        li {
+          padding-right: 15px;
+        }
+      }
+  
+      a {
+        text-decoration: none;
+        color: #248A83;
+      }
     }
   }
 }

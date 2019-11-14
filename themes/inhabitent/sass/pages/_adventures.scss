@@ -1,5 +1,8 @@
-.adventure div {
+.adventure {
+
+div {
   position: relative;
+}
 
   img {
     object-fit: cover;
@@ -11,8 +14,7 @@
     filter: brightness(75%);
   }
 
-  p,
-  section {
+  p, section {
     position: absolute;
     top: 0;
     padding: 20px;

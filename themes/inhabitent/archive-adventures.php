@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<hr>
 
 <h1>Latest Adventures</h1>
 
