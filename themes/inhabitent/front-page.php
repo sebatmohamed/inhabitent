@@ -24,7 +24,7 @@ foreach ($terms as $term):?>
 
 <div>
     <img src="<?php echo get_stylesheet_directory_uri();?>/images/product-type-icons/<?php echo $term->slug;?>.svg">
-    <p><?php echo category_description(2);?></p>
+    <?php echo category_description($term->term_id);?>
     <a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>">
     <button class="front-page-product-sections-btn" href="<?php echo "product-type/" . $term->slug ;?>"> <?php echo $term->name ;?></button>
     </a>
@@ -88,16 +88,32 @@ foreach ($terms as $term):?>
 
 <h1>Latest adventures</h1>
 
-<div class="latest-adventures">
-    <img class='item1' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/canoe-girl.jpg">
-    <img class='item2' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
-    <img class='item3' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg">
-    <img class='item4' src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/night-sky.jpg">
+<div class="latest-adventures"> 
+
+<?php
+    $args = array( 'numberposts' => 4, 'post_type' => 'adventures', 'order' => 'ASC', 'orderby' => 'date');
+    $postslist = get_posts( $args );
+    foreach ($postslist as $post): setup_postdata($post);?>
+    
+    <figure class="adventure">
+        
+    <div>
+        <?php the_post_thumbnail('large');?>
+        <p><?php the_title();?></p>
+        <section>
+            <a href="<?php echo get_permalink();?>"><button>Read more</button></a>
+        </section>
+    </div>
+
+    </figure> 
+
+    <?php endforeach;?>
+
     <section>
     <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
     </section>
-</div>
 
+    </div>
 
 </section>
     

@@ -28,8 +28,6 @@
 
     </figure> 
    
-
-    
     <!-- Loop ends -->
     <?php endwhile;?>
 

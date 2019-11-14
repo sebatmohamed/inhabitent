@@ -75,3 +75,18 @@ input.wpcf7-form-control.wpcf7-submit {
     }
   }
 }
+
+.shop-button {
+  text-decoration: none;
+  section {
+    padding-bottom: 60px;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    padding: 8px 15px;
+    background-color: #248a83;
+    font-size: 14px;
+  }
+}

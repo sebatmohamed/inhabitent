@@ -16,30 +16,29 @@
 
 .latest-adventures {
   display: grid;
-  grid-template-areas:
-    'a a b b'
-    'a a c d';
+  grid-template-areas: 
+  "a a b b"
+  "a a c d";
   grid-gap: 20px;
   padding: 50px;
 
-  .item1 {
+  div > img:first-child {
     grid-area: a;
-    height: 100%;
   }
 
-  .item2 {
+  div > img:nth-child(2) {
     grid-area: b;
-    height: 250px;
   }
 
-  .item3 {
+  div > img:nth-child(3) {
     grid-area: c;
   }
 
-  .item4 {
+  div > img:last-child {
     grid-area: d;
   }
 }
+
 
 //about page
 

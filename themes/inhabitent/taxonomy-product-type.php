@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<hr>
 
 <div class="product-type-header">
 
@@ -20,6 +19,8 @@
         the_post(); ?>
 
 <figure class="archive-products">
+    
+    <a href="<?php echo get_permalink();?>">
 
     <?php the_post_thumbnail('large');?>
 
@@ -27,7 +28,6 @@
 
     <figcaption>
     <hr class="dotted">
-    <a href="<?php echo get_permalink();?>">
     <div>
         <p><?php the_title();?></p>
         <p><?php echo " $" . get_field('price');?></p>
@@ -49,6 +49,12 @@
 <?php endif;?>
 
 </section>
+
+<a class="shop-button" href="<?php echo get_home_url() . '/products/';?>">
+<section>
+<button>Back to Shop</button>
+</section>
+</a>
 
 
     

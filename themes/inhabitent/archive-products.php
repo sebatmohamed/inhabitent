@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<hr>
 
 <h1>Shop stuff</h1>
 
@@ -29,8 +28,9 @@ foreach ($terms as $term):?>
     while( have_posts() ) :
         the_post(); ?>
 
-    
     <figure class="archive-products">
+
+    <a href="<?php echo get_permalink();?>">
 
      <?php the_post_thumbnail('large');?>
 
@@ -38,7 +38,7 @@ foreach ($terms as $term):?>
 
     <figcaption>
         <hr class="dotted">
-    <a href="<?php echo get_permalink();?>">
+    
     <div>
         <p><?php the_title();?></p>
         <p><?php echo " $" . get_field('price');?></p>

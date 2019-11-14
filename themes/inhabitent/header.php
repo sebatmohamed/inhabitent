@@ -9,7 +9,7 @@
 <body <?php body_class();?>>
 
 <div class="nav">
-    <a href="/inhabitent/">
+    <a href="<?php echo get_home_url();?>">
         <img src="<?php echo get_stylesheet_directory_uri();?>\images\logos\inhabitent-logo-tent-white.svg">
     </a>
 
