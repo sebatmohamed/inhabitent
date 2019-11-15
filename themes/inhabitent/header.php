@@ -14,7 +14,7 @@
     </a>
     <div class="nav-items">
         <?php wp_nav_menu(array('theme_location' => 'primary'));?>
-        <?php echo get_search_form();?>  
+        <?php echo get_search_form(); ?> 
     </div>
     
 </div>

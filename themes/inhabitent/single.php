@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 
 <div class="journal-posts-grid">
@@ -24,6 +25,12 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
+
+<?php
+
+if ( comments_open() || get_comments_number() ) :
+     comments_template();
+ endif;?>
 
 </section>
 

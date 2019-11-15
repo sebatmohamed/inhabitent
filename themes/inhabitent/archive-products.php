@@ -12,7 +12,7 @@
 <?php
 foreach ($terms as $term):?>
 
-<a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"> <?php echo $term->name ;?></a>
+<a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"><?php echo $term->name ;?></a>
 
 <?php endforeach;?>
 
