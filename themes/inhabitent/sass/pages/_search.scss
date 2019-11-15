@@ -1,0 +1,29 @@
+.search-grid {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    padding: 0px 50px;
+
+    .search-results {
+        grid-column-start: 1;
+        border-right: 1px solid #e1e1e1;
+
+        hr {
+            margin-right: 100px;
+        }
+
+        h5 {
+            text-align: left;
+            font-size: 40px;
+            font-family: 'Novecento-Bold';
+        }
+
+        p {
+            padding-right: 100px;
+        }
+
+    }
+
+    .sidebar {
+        grid-column-start: 2;
+    }
+}

@@ -237,11 +237,11 @@ footer {
 .sidebar {
   grid-column-start: 2;
   text-align: left;
-  padding-left: 40px; }
+  padding-left: 40px;
+  padding-top: 30px; }
   .sidebar h1 {
     text-align: left;
     padding-bottom: 20px;
-    padding-top: 50px;
     font-family: 'Novecento-Bold';
     font-size: 20px; }
   .sidebar p {
@@ -709,7 +709,7 @@ h1 {
     grid-column-start: 1;
     padding: 20px 50px;
     border-right: 1px solid #a1a1a1;
-    padding-bottom: 70px; }
+    padding-bottom: 120px; }
     .error-page .error-page-search h1 {
       text-align: left;
       font-size: 40px;
@@ -749,4 +749,22 @@ h1 {
     padding-top: 20px;
     padding-bottom: 30px; }
   .error-page .sidebar {
+    grid-column-start: 2; }
+
+.search-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  padding: 0px 50px; }
+  .search-grid .search-results {
+    grid-column-start: 1;
+    border-right: 1px solid #e1e1e1; }
+    .search-grid .search-results hr {
+      margin-right: 100px; }
+    .search-grid .search-results h5 {
+      text-align: left;
+      font-size: 40px;
+      font-family: 'Novecento-Bold'; }
+    .search-grid .search-results p {
+      padding-right: 100px; }
+  .search-grid .sidebar {
     grid-column-start: 2; }

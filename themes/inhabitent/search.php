@@ -1,8 +1,14 @@
 <?php get_header(); ?>
 
-<div class="contact-grid">
 
-<section class="find-us">
+<div class="search-grid">
+
+<section class="search-results">
+
+<h5>Search results for: </h5>
+
+<hr>
+
 
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
@@ -10,7 +16,7 @@
         the_post(); ?>
     
     <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
+    <p><?php the_content(); ?></p>
     
     <!-- Loop ends -->
     <?php endwhile;?>
