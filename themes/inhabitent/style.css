@@ -630,10 +630,20 @@ h1 {
   border-right: 1px solid #e1e1e1;
   padding-top: 40px;
   padding-right: none; }
-  .journal-posts .photo-text, .journal-posts p {
+  .journal-posts .photo-text,
+  .journal-posts p,
+  .journal-posts .bottom-photo-text {
     grid-column-start: 1; }
   .journal-posts .photo-text {
-    position: relative; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 730px; }
     .journal-posts .photo-text img {
       width: 730px;
       height: 450px;
@@ -649,8 +659,33 @@ h1 {
       background-color: #248a83;
       padding: 20px;
       margin-top: 30px; }
+    .journal-posts .photo-text .bottom-photo-text {
+      margin-top: -16px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 730px; }
+    .journal-posts .photo-text h6 {
+      background-color: #248a83;
+      color: white; }
+  .journal-posts button {
+    border-radius: 0;
+    padding: 8px 15px;
+    background: none;
+    border: 1px solid black; }
+    .journal-posts button button i {
+      padding-right: 5px; }
   .journal-posts p {
     line-height: 1.75;
     padding-bottom: 20px;
     text-align: left;
     padding-right: 100px; }
+  .journal-posts .tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .journal-posts .tags p {
+      text-transform: uppercase; }

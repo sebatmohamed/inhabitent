@@ -16,6 +16,17 @@
     </div>
     
     <?php the_content(); ?>
+
+    <div class="tags">
+    <p>Posted in <i class="fas fa-long-arrow-alt-right"></i> contests</p>
+    <p>Tagged <i class="fas fa-long-arrow-alt-right"></i> photography, vans</p>
+    </div>
+
+    
+
+    <button><i class="fab fa-facebook-f"></i> Like</button>
+    <button><i class="fab fa-twitter"></i> Tweet</button>
+    <button><i class="fab fa-pinterest"></i> Pin</button>
     
     <!-- Loop ends -->
     <?php endwhile;?>
