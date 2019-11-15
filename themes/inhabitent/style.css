@@ -396,7 +396,8 @@ h1 {
     text-align: left;
     font-size: 23px;
     padding-right: 80px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-family: 'Novecento-Bold'; }
 
 .inhabitent-journal img {
   width: 100%;
@@ -550,7 +551,8 @@ h1 {
                   justify-content: space-between;
           margin-top: -22px; }
           .taxonomy-products-grid .archive-products figcaption a div p {
-            background: white; }
+            background: white;
+            z-index: 9999; }
 
 .product-type-header h1 {
   padding-bottom: 40px; }
@@ -699,3 +701,52 @@ h1 {
         color: #248a83; }
   .journal-posts .comments-area {
     padding-top: 20px; }
+
+.error-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+  .error-page .error-page-search {
+    grid-column-start: 1;
+    padding: 20px 50px;
+    border-right: 1px solid #a1a1a1;
+    padding-bottom: 70px; }
+    .error-page .error-page-search h1 {
+      text-align: left;
+      font-size: 40px;
+      font-family: 'Novecento-Bold';
+      padding-bottom: 30px; }
+    .error-page .error-page-search p {
+      padding-bottom: 20px; }
+    .error-page .error-page-search input {
+      padding: 8px;
+      background: #F0F0F0;
+      border-width: 0;
+      font-family: 'Merriweather';
+      font-size: 16px; }
+  .error-page .error-page-posts h2 {
+    font-size: 25px;
+    font-family: 'Novecento-Bold';
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  .error-page .error-page-posts li {
+    padding-bottom: 10px; }
+    .error-page .error-page-posts li a {
+      text-decoration: none;
+      color: #248a83; }
+  .error-page .error-page-categories h2 {
+    font-size: 25px;
+    font-family: 'Novecento-Bold';
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  .error-page .error-page-categories li {
+    padding-bottom: 10px; }
+    .error-page .error-page-categories li a {
+      text-decoration: none;
+      color: #248a83; }
+  .error-page .error-page-archives h2 {
+    font-size: 25px;
+    font-family: 'Novecento-Bold';
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  .error-page .sidebar {
+    grid-column-start: 2; }
