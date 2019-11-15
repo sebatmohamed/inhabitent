@@ -18,11 +18,9 @@
     <?php the_content(); ?>
 
     <div class="tags">
-    <p>Posted in <i class="fas fa-long-arrow-alt-right"></i> contests</p>
-    <p>Tagged <i class="fas fa-long-arrow-alt-right"></i> photography, vans</p>
+    <p>Posted in <i class="fas fa-long-arrow-alt-right"></i><span> contests</span></p>
+    <p>Tagged <i class="fas fa-long-arrow-alt-right"></i><span> photography, vans</span></p>
     </div>
-
-    
 
     <button><i class="fab fa-facebook-f"></i> Like</button>
     <button><i class="fab fa-twitter"></i> Tweet</button>

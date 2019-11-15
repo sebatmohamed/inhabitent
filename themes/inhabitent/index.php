@@ -19,10 +19,8 @@
     <h6><?php echo comments_number();?>/</h6>
     <h6><?php echo " by " . get_the_author();?></h6>
     </div>
-    
-    </div>
 
-   
+    </div>
 
     <p><?php echo wp_trim_words(get_the_content(), 60, ' [...]');?></p>
 

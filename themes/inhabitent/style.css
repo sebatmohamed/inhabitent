@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px 50px 0px 50px;
+  padding: 10px 50px 5px 50px;
   border-bottom: 1px solid #e1e1e1; }
   .nav a {
     z-index: 9999; }
@@ -127,7 +127,8 @@ h1, h2, h3, h4, h5, h6 {
       grid-column-start: 3;
       width: 25%;
       margin-top: -8px;
-      color: white; }
+      color: white;
+      border-radius: 20px; }
     .nav .nav-items .menu-main-container .menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -686,6 +687,15 @@ h1 {
   .journal-posts .tags {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-bottom: 15px; }
     .journal-posts .tags p {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding: 0;
+      padding-right: 30px;
+      font-family: 'Novecento';
+      font-size: 16px; }
+      .journal-posts .tags p span {
+        color: #248a83; }
+  .journal-posts .comments-area {
+    padding-top: 20px; }

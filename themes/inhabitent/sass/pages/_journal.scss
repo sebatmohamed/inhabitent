@@ -67,9 +67,22 @@
 
   .tags {
     display: flex;
+    padding-bottom: 15px;
 
     p{
       text-transform: uppercase;
+      padding: 0;
+      padding-right: 30px;
+      font-family: 'Novecento';
+      font-size: 16px;
+
+      span {
+        color: #248a83;
+      }
     }
+  }
+
+  .comments-area {
+    padding-top: 20px;
   }
 }
