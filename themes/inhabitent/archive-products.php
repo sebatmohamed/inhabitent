@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
+<div class="archive-products-title">
 <h1>Shop stuff</h1>
+</div>
 
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',
@@ -10,9 +12,15 @@
 <div class="product-type-links"> 
 
 <?php
-foreach ($terms as $term):?>
 
-<a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"><?php echo $term->name ;?></a>
+foreach ($terms as $term):
+
+$phrase  = $term->slug;
+$healthy = ("STUFF");
+$yummy   = ("");
+$output = str_replace($healthy, $yummy, $phrase);?>
+
+<a href="<?php echo get_home_url() . '/product-type/' . $term->slug ;?>"><?php echo $output;?></a>
 
 <?php endforeach;?>
 

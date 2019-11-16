@@ -87,3 +87,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1000px 1fr;
 }
+
+//search page
+
+.search-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}

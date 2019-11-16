@@ -2,9 +2,17 @@
 
 <div class="product-type-header">
 
-<h1>Hello</h1>
+<?php
 
-<p>lorem ipsum</p>
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+
+$phrase  = $term->slug;
+$healthy = ("STUFF");
+$yummy   = ("");
+$output = str_replace($healthy, $yummy, $phrase);?>
+
+<h1><?php echo $output;?></h1>
+<?php echo category_description($term->term_id);?>
 
 </div>
 

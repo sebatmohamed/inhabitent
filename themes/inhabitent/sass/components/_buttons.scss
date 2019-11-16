@@ -90,3 +90,29 @@ input.wpcf7-form-control.wpcf7-submit {
     font-size: 14px;
   }
 }
+
+.search-results {
+  section {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    button {
+      padding: 8px 15px;
+      background: none;
+      font-size: 14px;
+      grid-column-start: 1;
+    }
+  }
+
+  .search-button {
+    button {
+      color: white;
+      background-color: #248a83;
+      font-size: 16px;
+      padding: 5px 10px;  
+    }
+
+    button:nth-child(1) {
+      background-color: grey;
+    }
+  }
+}

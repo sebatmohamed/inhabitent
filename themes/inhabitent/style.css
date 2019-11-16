@@ -202,6 +202,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1000px 1fr; }
 
+.search-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr; }
+
 footer {
   display: grid;
   grid-template-columns: 4;
@@ -346,6 +350,24 @@ input.wpcf7-form-control.wpcf7-submit {
     background-color: #248a83;
     font-size: 14px; }
 
+.search-results section {
+  padding-top: 10px;
+  padding-bottom: 30px; }
+  .search-results section button {
+    padding: 8px 15px;
+    background: none;
+    font-size: 14px;
+    grid-column-start: 1; }
+
+.search-results .search-button button {
+  color: white;
+  background-color: #248a83;
+  font-size: 16px;
+  padding: 5px 10px; }
+
+.search-results .search-button button:nth-child(1) {
+  background-color: grey; }
+
 .home-banner {
   width: 100%;
   height: 450px; }
@@ -470,6 +492,9 @@ main p {
     height: 375px;
     padding-bottom: 20px; }
 
+.archive-products-title h1 {
+  font-family: 'Novecento-Bold'; }
+
 .single-product-grid img {
   grid-column-start: 1;
   width: 100%;
@@ -555,7 +580,10 @@ h1 {
             z-index: 9999; }
 
 .product-type-header h1 {
-  padding-bottom: 40px; }
+  padding-bottom: 30px;
+  font-family: 'Novecento-Bold';
+  font-size: 30px;
+  padding-top: 10px; }
 
 .product-type-header p {
   padding-bottom: 40px;
@@ -752,19 +780,26 @@ h1 {
     grid-column-start: 2; }
 
 .search-grid {
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
   padding: 0px 50px; }
   .search-grid .search-results {
     grid-column-start: 1;
     border-right: 1px solid #e1e1e1; }
     .search-grid .search-results hr {
-      margin-right: 100px; }
+      margin-right: 100px;
+      border-top: #e1e1e1; }
     .search-grid .search-results h5 {
       text-align: left;
       font-size: 40px;
-      font-family: 'Novecento-Bold'; }
+      font-family: 'Novecento-Bold';
+      margin-top: 30px;
+      padding-bottom: 15px; }
+    .search-grid .search-results h1 {
+      text-align: start;
+      color: #248a83;
+      font-family: 'Novecento-Bold';
+      padding-bottom: 20px; }
     .search-grid .search-results p {
-      padding-right: 100px; }
+      padding-right: 100px;
+      line-height: 1.75; }
   .search-grid .sidebar {
     grid-column-start: 2; }
