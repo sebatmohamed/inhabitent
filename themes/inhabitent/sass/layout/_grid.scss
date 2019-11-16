@@ -16,14 +16,9 @@
 
 .latest-adventures {
   display: grid;
-  grid-template-areas: 
-  "a a b b"
-  "a a c d";
-  grid-gap: 20px;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
   padding: 50px;
 }
-
-
 
 //about page
 
@@ -79,8 +74,9 @@ main {
 .adventures-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 40px 50px 100px;
   grid-gap: 30px;
+  padding: 40px 50px 120px;
+
 }
 
 .single-adventure-grid {

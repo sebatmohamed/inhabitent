@@ -99,10 +99,11 @@ table {
 body {
   font-size: 16px;
   color: #404040;
-  font-family: 'Merriweather-Light'; }
+  font-family: 'Merriweather-Light';
+  background: #ffffff; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Novecento'; }
+  font-family: 'Novecento-Bold'; }
 
 .nav {
   display: grid;
@@ -155,8 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .latest-adventures {
   display: grid;
-  grid-template-areas: "a a b b" "a a c d";
-  grid-gap: 20px;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
   padding: 50px; }
 
 main {
@@ -195,8 +195,8 @@ main {
 .adventures-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 40px 50px 100px;
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  padding: 40px 50px 120px; }
 
 .single-adventure-grid {
   display: grid;
@@ -209,13 +209,10 @@ main {
 footer {
   display: grid;
   grid-template-columns: 4;
-  height: 40vh;
+  height: 45vh;
   color: white;
   background-image: url("http://localhost:8888/inhabitent/wp-content/uploads/2019/11/dark-wood.png");
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   line-height: 1.75;
   z-index: 9999; }
   footer h1 {
@@ -229,12 +226,15 @@ footer {
   footer .hours {
     grid-column-start: 2; }
   footer .logo {
-    grid-column-start: 4; }
+    grid-column-start: 4;
+    margin-top: 40px; }
     footer .logo img {
-      color: black; }
+      color: black;
+      width: 70%; }
   footer .copyright {
     grid-column-start: 3;
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px; }
     footer .copyright span {
       text-transform: uppercase; }
 
@@ -250,18 +250,13 @@ footer {
     font-size: 20px; }
   .sidebar p {
     padding-bottom: 20px; }
-  .sidebar span {
-    font-family: 'Merriweather-Bold'; }
-  .sidebar i {
-    padding-right: 5px; }
   .sidebar .contact p:nth-child(4) {
     padding-bottom: 10px; }
-  .sidebar .contact p:nth-child(5) {
-    padding-left: 20px; }
-  .sidebar .contact p:nth-child(2) {
-    color: #248a83; }
-  .sidebar .contact p:nth-child(3) {
-    color: #248a83; }
+  .sidebar .contact span {
+    color: #248a83;
+    padding-left: 5px; }
+  .sidebar .hours span {
+    font-family: 'Merriweather-Bold'; }
   .sidebar .archives p {
     color: #248a83;
     padding-bottom: 10px; }
@@ -277,11 +272,12 @@ form input, form textarea {
   background: #F0F0F0; }
 
 form input {
-  height: 25px; }
+  height: 25px;
+  width: 40%; }
 
 form textarea {
-  width: 60%;
-  height: 180px; }
+  width: 80%;
+  height: 190px; }
 
 button {
   text-transform: uppercase; }
@@ -328,7 +324,8 @@ input.wpcf7-form-control.wpcf7-submit {
   font-size: 12px;
   color: white;
   background-color: #248a83;
-  padding: 0px 15px; }
+  padding: 0px 15px;
+  width: 8%; }
 
 .adventure section {
   padding-bottom: 60px; }
@@ -418,8 +415,7 @@ h1 {
     text-align: left;
     font-size: 23px;
     padding-right: 80px;
-    margin-top: 10px;
-    font-family: 'Novecento-Bold'; }
+    margin-top: 10px; }
 
 .inhabitent-journal img {
   width: 100%;
@@ -430,6 +426,9 @@ h1 {
 .inhabitent-journal span {
   text-transform: uppercase;
   color: #248a83; }
+
+.latest-adventures .adventure {
+  padding-bottom: 20px; }
 
 .latest-adventures img {
   width: 100%;
@@ -456,8 +455,7 @@ h1 {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, 25%);
-            transform: translate(-50%, 25%);
-    font-family: 'Novecento-Bold'; }
+            transform: translate(-50%, 25%); }
 
 main h3 {
   text-align: center;
@@ -478,22 +476,17 @@ main p {
   .find-us h2 {
     text-transform: uppercase;
     font-size: 30px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-    font-family: 'Novecento-Bold'; }
+    padding-bottom: 20px; }
   .find-us p {
     padding-bottom: 20px;
     line-height: 1.75;
     padding-right: 20px; }
   .find-us iframe {
-    width: 750px;
+    width: 850px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 375px;
-    padding-bottom: 20px; }
-
-.archive-products-title h1 {
-  font-family: 'Novecento-Bold'; }
+    height: 325px;
+    padding-bottom: 30px; }
 
 .single-product-grid img {
   grid-column-start: 1;
@@ -581,13 +574,16 @@ h1 {
 
 .product-type-header h1 {
   padding-bottom: 30px;
-  font-family: 'Novecento-Bold';
   font-size: 30px;
   padding-top: 10px; }
 
 .product-type-header p {
   padding-bottom: 40px;
   text-align: center; }
+
+.adventures-title h1 {
+  padding-bottom: 20px;
+  font-size: 30px; }
 
 .adventure div {
   position: relative; }
@@ -610,11 +606,11 @@ h1 {
 
 .adventure p {
   color: white;
-  font-size: 30px;
+  font-size: 55px;
   margin-top: 40px; }
 
 .adventure section {
-  margin-top: 90px; }
+  margin-top: 210px; }
   .adventure section button {
     color: white; }
 
@@ -691,17 +687,20 @@ h1 {
       padding: 20px;
       margin-top: 30px; }
     .journal-posts .photo-text .bottom-photo-text {
-      margin-top: -16px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      width: 730px; }
-    .journal-posts .photo-text h6 {
-      background-color: #248a83;
-      color: white; }
+      width: 730px;
+      position: absolute;
+      bottom: 0; }
+      .journal-posts .photo-text .bottom-photo-text h6 {
+        color: white;
+        font-size: 15px;
+        background-color: #248a83;
+        padding: 5px 12px; }
   .journal-posts button {
     border-radius: 0;
     padding: 8px 15px;
@@ -741,7 +740,6 @@ h1 {
     .error-page .error-page-search h1 {
       text-align: left;
       font-size: 40px;
-      font-family: 'Novecento-Bold';
       padding-bottom: 30px; }
     .error-page .error-page-search p {
       padding-bottom: 20px; }
@@ -753,7 +751,6 @@ h1 {
       font-size: 16px; }
   .error-page .error-page-posts h2 {
     font-size: 25px;
-    font-family: 'Novecento-Bold';
     padding-top: 20px;
     padding-bottom: 30px; }
   .error-page .error-page-posts li {
@@ -763,7 +760,6 @@ h1 {
       color: #248a83; }
   .error-page .error-page-categories h2 {
     font-size: 25px;
-    font-family: 'Novecento-Bold';
     padding-top: 20px;
     padding-bottom: 30px; }
   .error-page .error-page-categories li {
@@ -773,7 +769,6 @@ h1 {
       color: #248a83; }
   .error-page .error-page-archives h2 {
     font-size: 25px;
-    font-family: 'Novecento-Bold';
     padding-top: 20px;
     padding-bottom: 30px; }
   .error-page .sidebar {
@@ -790,13 +785,11 @@ h1 {
     .search-grid .search-results h5 {
       text-align: left;
       font-size: 40px;
-      font-family: 'Novecento-Bold';
       margin-top: 30px;
       padding-bottom: 15px; }
     .search-grid .search-results h1 {
       text-align: start;
       color: #248a83;
-      font-family: 'Novecento-Bold';
       padding-bottom: 20px; }
     .search-grid .search-results p {
       padding-right: 100px;

@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<div class="archive-products-title">
 <h1>Shop stuff</h1>
-</div>
 
 <?php $terms = get_terms( array(
     'taxonomy' => 'product-type',

@@ -57,14 +57,13 @@ h1 {
     border: 1px solid #a1a1a1;
     border-top: 5px solid #a1a1a1;
     padding: 5px;
-
+    
     h1 {
       color: #248a83;
       text-align: left;
       font-size: 23px;
       padding-right: 80px;
       margin-top: 10px;
-      font-family: 'Novecento-Bold';
     }
   }
 
@@ -81,8 +80,12 @@ h1 {
 }
 
 .latest-adventures {
-  img {
-    width: 100%;
-    object-fit: cover;
+
+  .adventure {
+    padding-bottom: 20px;
   }
-}
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }

@@ -37,20 +37,6 @@ foreach ($terms as $term):?>
 
 <h1>Inhabitent Journal</h1>
 
-
-<?php if( have_posts() ) :
-
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-
-    <!-- <?php the_title();
-    the_content();?> -->
-
-    <?php endwhile;?>
-    
-    <?php the_posts_navigation();?>
-
     <div class="inhabitent-journal">
 
     <?php
@@ -62,11 +48,10 @@ foreach ($terms as $term):?>
 
     <?php the_post_thumbnail('large');?>
     <div>
-    <?php the_date();?>
+    <?php echo the_date() . ' / ';?><?php echo comments_number();?>
     <br>
     <h1><?php the_title();?></h1>
     <br>
-    <!-- <p><?php echo wp_trim_words(get_the_excerpt(), 10, '...');?></p> -->
     
     <section>
     <a href="<?php echo get_permalink();?>"><button>Read entry</button></a>
@@ -81,10 +66,6 @@ foreach ($terms as $term):?>
 
 
     </div>
-
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
 
 <h1>Latest adventures</h1>
 

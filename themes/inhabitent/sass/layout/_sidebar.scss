@@ -4,7 +4,6 @@
   padding-left: 40px;
   padding-top: 30px;
 
-
   h1 {
     text-align: left;
     padding-bottom: 20px;
@@ -16,33 +15,27 @@
     padding-bottom: 20px;
   }
 
-  span {
-    font-family: 'Merriweather-Bold';
-  }
-
-  i {
-    padding-right: 5px;
-  }
-
   .contact {
     p:nth-child(4) {
       padding-bottom: 10px;
     }
 
-    p:nth-child(5) {
-      padding-left: 20px;
-    }
-    p:nth-child(2) {
+    span {
       color: #248a83;
-    }
-
-    p:nth-child(3) {
-      color: #248a83;
+      padding-left: 5px;
     }
   }
 
-  .archives p {
-    color: #248a83;
-    padding-bottom: 10px;
+  .hours {
+    span {
+      font-family: 'Merriweather-Bold';
+    }
+  }
+
+  .archives {
+    p {
+      color: #248a83;
+      padding-bottom: 10px;
+    }
   }
 }

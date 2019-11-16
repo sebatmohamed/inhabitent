@@ -12,13 +12,10 @@
 
     <div class="photo-text">
     <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail('large');?>
-
     <div class="bottom-photo-text">
-    <h6><?php the_date(); ?>/</h6>
-    <h6><?php echo comments_number();?>/</h6>
-    <h6><?php echo " by " . get_the_author();?></h6>
+    <h6><?php echo the_date() . '/';?><?php echo comments_number() . '/by ' . get_the_author();?></h6> 
     </div>
+    <?php the_post_thumbnail('large');?>
 
     </div>
 

@@ -1,17 +1,18 @@
 <?php get_header(); ?>
 
+<div class="adventures-title">
 <h1>Latest Adventures</h1>
+</div>
 
 <hr class="dashed">
 
 <section class="adventures-grid">
 
-<?php if( have_posts() ) :
+    <?php
+    $args = array( 'numberposts' => 4, 'post_type' => 'adventures', 'order' => 'ASC', 'orderby' => 'date');
+    $postslist = get_posts( $args );
+    foreach ($postslist as $post): setup_postdata($post);?>
 
-//The WordPress Loop: loads post content 
-    while( have_posts() ) :
-        the_post(); ?>
-    
     <figure class="adventure">
 
     <div>    
@@ -26,15 +27,8 @@
 
 
     </figure> 
-   
-    <!-- Loop ends -->
-    <?php endwhile;?>
 
-    <!-- <?php the_posts_navigation();?> -->
-
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif;?>
+    <?php endforeach;?>
 
 </section>
     
