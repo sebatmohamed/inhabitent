@@ -69,7 +69,7 @@ foreach ($terms as $term):?>
 
 <h1>Latest adventures</h1>
 
-<div class="latest-adventures"> 
+    <div class="latest-adventures"> 
 
 <?php
     $args = array( 'numberposts' => 4, 'post_type' => 'adventures', 'order' => 'ASC', 'orderby' => 'date');
@@ -77,7 +77,6 @@ foreach ($terms as $term):?>
     foreach ($postslist as $post): setup_postdata($post);?>
     
     <figure class="adventure">
-        
     <div>
         <?php the_post_thumbnail('large');?>
         <p><?php the_title();?></p>
@@ -90,11 +89,14 @@ foreach ($terms as $term):?>
 
     <?php endforeach;?>
 
+    </div>
+
+    <div class="adventures-button">
     <section>
     <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
     </section>
-
     </div>
+
 
 </section>
     

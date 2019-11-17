@@ -22,14 +22,16 @@ button {
   }
 }
 
-.latest-adventures {
+.adventures-button {
+  section {
+    padding: 50px;
   button {
     font-size: 14px;
     color: white;
     background-color: #248a83;
-    padding: 5px;
-    position: relative;
+    padding: 8px 15px;
   }
+}
 }
 
 .price {
@@ -58,12 +60,12 @@ button {
 }
 
 input.wpcf7-form-control.wpcf7-submit {
-    font-size: 12px;
-    color: white;
-    background-color: #248a83;
-    padding: 0px 15px;
-    width: 8%;
-  }
+  font-size: 12px;
+  color: white;
+  background-color: #248a83;
+  padding: 0px 15px;
+  width: 8%;
+}
 
 .adventure {
   section {
