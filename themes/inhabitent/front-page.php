@@ -89,12 +89,10 @@ foreach ($terms as $term):?>
 
     <?php endforeach;?>
 
-    </div>
-
-    <div class="adventures-button">
     <section>
     <a href="<?php echo get_home_url() . '/adventures/';?>"><button>More adventures</button></a>
     </section>
+    
     </div>
 
 
