@@ -30,27 +30,26 @@ $output = str_replace($healthy, $yummy, $phrase);?>
     
     <a href="<?php echo get_permalink();?>">
 
-    <?php the_post_thumbnail('large');?>
+        <?php the_post_thumbnail('large');?>
 
-    <div class="grey-space"></div>
+        <div class="grey-space"></div>
 
-    <figcaption>
-    <hr class="dotted">
-    <div>
-        <p><?php the_title();?></p>
-        <p><?php echo " $" . get_field('price');?></p>
-    </div>
+        <figcaption>
+        <hr class="dotted">
+        <div>
+            <p><?php the_title();?></p>
+            <p><?php echo " $" . get_field('price');?></p>
+        </div>
     
     </a>
 
-    </figcaption>
+        </figcaption>
    
-   </figure>  
+</figure>  
     
     <!-- Loop ends -->
     <?php endwhile;?>
 
-    <?php the_posts_navigation();?>
 
 <?php else : ?>
         <p>No posts found</p>
@@ -59,11 +58,9 @@ $output = str_replace($healthy, $yummy, $phrase);?>
 </section>
 
 <a class="shop-button" href="<?php echo get_home_url() . '/products/';?>">
-<section>
-<button>Back to Shop</button>
-</section>
+    <section>
+        <button>Back to Shop</button>
+    </section>
 </a>
 
-
-    
 <?php get_footer();?>

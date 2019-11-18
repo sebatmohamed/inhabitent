@@ -57,7 +57,6 @@ $output = str_replace($healthy, $yummy, $phrase);?>
    
     </figure>    
 
-    
     <!-- Loop ends -->
     <?php endwhile;?>
 

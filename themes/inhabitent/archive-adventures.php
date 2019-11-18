@@ -25,7 +25,6 @@
 
     </div>
 
-
     </figure> 
 
     <?php endforeach;?>

@@ -17,15 +17,13 @@
     
     <h1><?php the_title(); ?></h1>
     <p><?php echo wp_trim_words(get_the_content(), 40, ' [...]');?></p>
+
     <section>
-    <a href="<?php echo get_permalink();?>"><button>Read more <i class="fas fa-long-arrow-alt-right"></i></button></a>
+        <a href="<?php echo get_permalink();?>"><button>Read more <i class="fas fa-long-arrow-alt-right"></i></button></a>
     </section>
-    
     
     <!-- Loop ends -->
     <?php endwhile;?>
-
-    <!-- <?php the_posts_navigation();?> -->
 
 <?php else : ?>
         <p>No posts found</p>

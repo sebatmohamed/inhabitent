@@ -768,6 +768,23 @@ h1 {
         color: #248a83; }
   .journal-posts .comments-area {
     padding-top: 20px; }
+  .journal-posts h2 {
+    font-size: 25px; }
+  .journal-posts .avatar.avatar-50.photo {
+    border-radius: 50%; }
+  .journal-posts .comment-reply-title {
+    font-size: 25px;
+    padding-top: 20px; }
+  .journal-posts .logged-in-as {
+    display: none; }
+  .journal-posts small {
+    display: none; }
+  .journal-posts .form-submit #submit {
+    font-size: 12px;
+    color: white;
+    background-color: #248a83;
+    padding: 0px 15px;
+    width: 10%; }
 
 .error-page {
   display: grid;

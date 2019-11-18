@@ -26,14 +26,19 @@ Run gulp. You can access your project at http://localhost:8888.
 - Git
 - Wordpress plugins
 
+
 #### Personal Learnings
 
-
+- How to create a multipage website using Wordpress as a content management system.
+- Leverage the WP template hierarchy to generate all required templates for the website.
+- Enqueue files properly in the theme's functions.php file.
+- How to dynamically add in content rather than hard code.
 
 
 ## Contribution
 
 Please feel free to clone my project and contribute to it.
+
 
 ## Authors
 

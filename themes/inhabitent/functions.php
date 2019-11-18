@@ -87,7 +87,7 @@ function inhabitent_widgets() {
 
 add_action('widgets_init', 'inhabitent_widgets');
 
-//Products/Adventures Post Type
+//Products and Adventures Post Type
 
 function inhabitent_post_types() {
     register_post_type('products', array(

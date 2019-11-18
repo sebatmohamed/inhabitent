@@ -9,14 +9,12 @@
         the_post(); ?>
     
     <div class="about-banner">
-    <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail('full');?>
+        <h2><?php the_title(); ?></h2>
+        <?php the_post_thumbnail('full');?>
     </div>
 
-    <!-- <h3><?php the_permalink();?></h3> -->
-
     <main>
-    <?php the_content(); ?>
+        <?php the_content(); ?>
     </main>
     
     <!-- Loop ends -->

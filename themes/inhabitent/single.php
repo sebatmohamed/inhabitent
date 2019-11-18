@@ -12,7 +12,7 @@
     
     <div class="photo-text">
        <h2><?php the_title(); ?></h2>
-    <?php the_post_thumbnail('large');?> 
+        <?php the_post_thumbnail('large');?> 
     </div>
     
     <?php the_content(); ?>
@@ -23,6 +23,7 @@
         <span><?php echo $category->name;?></span>
         <?php endforeach;?>
     </p>
+    
     <p>Tagged <i class="fas fa-long-arrow-alt-right"></i>
         <?php foreach ( get_the_tags() as $tag ):?> 
         <span><?php echo $tag->name;?></span>
@@ -36,8 +37,6 @@
     
     <!-- Loop ends -->
     <?php endwhile;?>
-
-    <?php the_posts_navigation();?>
 
 <?php else : ?>
         <p>No posts found</p>

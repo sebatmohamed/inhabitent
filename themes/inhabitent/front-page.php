@@ -4,7 +4,6 @@
 
 <div class="home-banner">
 <img class="hero-image" src="<?php echo get_stylesheet_directory_uri();?>/images/home-hero.jpg">
-<!-- <?php the_post_thumbnail('large');?> -->
 <img class="banner-logo" src="<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-full.svg">
 </div>
 
@@ -47,6 +46,7 @@ foreach ($terms as $term):?>
     <section>
 
     <?php the_post_thumbnail('large');?>
+
     <div>
     <?php echo the_date() . ' / ';?><?php echo comments_number();?>
     <br>
@@ -63,7 +63,6 @@ foreach ($terms as $term):?>
 
 
     <?php endforeach;?> 
-
 
     </div>
 
