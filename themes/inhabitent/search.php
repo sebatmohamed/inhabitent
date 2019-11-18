@@ -5,7 +5,7 @@
 
 <section class="search-results">
 
-<h5>Search results for: </h5>
+<h5>Search results for:</h5>
 
 <hr>
 
@@ -16,7 +16,7 @@
         the_post(); ?>
     
     <h1><?php the_title(); ?></h1>
-    <p><?php echo wp_trim_words(get_the_content(), 50, ' [...]');?></p>
+    <p><?php echo wp_trim_words(get_the_content(), 40, ' [...]');?></p>
     <section>
     <a href="<?php echo get_permalink();?>"><button>Read more <i class="fas fa-long-arrow-alt-right"></i></button></a>
     </section>

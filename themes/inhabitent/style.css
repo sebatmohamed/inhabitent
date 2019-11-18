@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 9999; }
     .nav a img {
       grid-column-start: 1;
-      width: 30px;
+      width: 35px;
       z-index: 9999; }
   .nav .nav-items {
     grid-column-start: 3;
