@@ -16,6 +16,50 @@ function my_login_logo() { ?>
 
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+function header_color() {
+
+    if ( !is_page( array( 'Home', 'About' ) ) ) { ?>
+    
+        <style>
+        .nav a img {
+            filter: invert(46%) sepia(16%) saturate(1669%) hue-rotate(127deg) brightness(94%) contrast(91%);
+        }
+        .menu-main-container a {
+            color: #248a83;
+        }
+        </style>
+    
+    <?php
+    } else { ;?>
+    
+        <style>
+        .menu-main-container a {
+            color: white;
+        }
+        </style>
+    
+    <?php }
+}
+    
+    add_action( 'wp', 'header_color' );
+
+function header_post_color() {
+
+    if ( is_singular('adventures') ) { ?>
+    
+        <style>
+        .nav a img {
+            filter: none;
+        }
+        .menu-main-container a {
+            color: white;
+        }
+        </style>
+    <?php }
+}
+    
+    add_action( 'wp', 'header_post_color' );
+
 function inhabitent_logo_url() {
     return home_url();
 }
@@ -128,11 +172,5 @@ function inhabitent_product_type() {
     register_taxonomy( $slug, array( 'products' ), $args );
   }
   add_action( 'init', 'inhabitent_product_type' );
-
-  //Adventures Post Type
-
-
-
-  
 
 ?>
