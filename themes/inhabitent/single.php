@@ -18,8 +18,16 @@
     <?php the_content(); ?>
 
     <div class="tags">
-    <p>Posted in <i class="fas fa-long-arrow-alt-right"></i><span> contests</span></p>
-    <p>Tagged <i class="fas fa-long-arrow-alt-right"></i><span> photography, vans</span></p>
+    <p>Posted in <i class="fas fa-long-arrow-alt-right"></i>
+        <?php foreach ( get_the_category() as $category ):?> 
+        <span><?php echo $category->name;?></span>
+        <?php endforeach;?>
+    </p>
+    <p>Tagged <i class="fas fa-long-arrow-alt-right"></i>
+        <?php foreach ( get_the_tags() as $tag ):?> 
+        <span><?php echo $tag->name;?></span>
+        <?php endforeach;?>
+    </p>
     </div>
 
     <button><i class="fab fa-facebook-f"></i> Like</button>
