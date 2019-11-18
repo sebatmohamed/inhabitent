@@ -21,8 +21,8 @@ function header_color() {
     if ( !is_page( array( 'Home', 'About' ) ) && !is_singular('adventures') ) { ?>
     
         <style>
-        .nav a img {
-            filter: invert(46%) sepia(16%) saturate(1669%) hue-rotate(127deg) brightness(94%) contrast(91%);
+        .nav a .white-logo {
+            display: none;
         }
         .menu-main-container a {
             color: #248a83;
@@ -33,8 +33,8 @@ function header_color() {
     } else { ;?>
     
         <style>
-        .nav a img {
-            filter: none;
+        .nav a .green-logo {
+            display: none;
         }
         .menu-main-container a {
             color: white;

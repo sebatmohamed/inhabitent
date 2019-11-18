@@ -112,7 +112,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #e1e1e1; }
   .nav a {
     z-index: 9999; }
-    .nav a img {
+    .nav a .white-logo {
+      grid-column-start: 1;
+      width: 35px;
+      z-index: 9999; }
+    .nav a .green-logo {
       grid-column-start: 1;
       width: 35px;
       z-index: 9999; }

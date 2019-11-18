@@ -1,4 +1,4 @@
-## Inhabitent
+# Inhabitent
 
 A snazzy hipster brand website for the outdoors.
 
@@ -7,7 +7,7 @@ A snazzy hipster brand website for the outdoors.
 
 Ensure you have [Node.js](https://nodejs.org/en/) installed first. Download this WordPress [starter pack](https://github.com/robhyrk/wp-starter)
 
-# Install dependencies:
+#### Install dependencies:
 
 ``$ npm install``
 
