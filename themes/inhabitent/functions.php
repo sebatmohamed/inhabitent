@@ -18,7 +18,7 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 function header_color() {
 
-    if ( !is_page( array( 'Home', 'About' ) ) ) { ?>
+    if ( !is_page( array( 'Home', 'About' ) ) && !is_singular('adventures') ) { ?>
     
         <style>
         .nav a img {
@@ -33,6 +33,9 @@ function header_color() {
     } else { ;?>
     
         <style>
+        .nav a img {
+            filter: none;
+        }
         .menu-main-container a {
             color: white;
         }
@@ -42,23 +45,6 @@ function header_color() {
 }
     
     add_action( 'wp', 'header_color' );
-
-function header_post_color() {
-
-    if ( is_singular('adventures') ) { ?>
-    
-        <style>
-        .nav a img {
-            filter: none;
-        }
-        .menu-main-container a {
-            color: white;
-        }
-        </style>
-    <?php }
-}
-    
-    add_action( 'wp', 'header_post_color' );
 
 function inhabitent_logo_url() {
     return home_url();
