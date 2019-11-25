@@ -49,3 +49,5 @@ uploads/wp-migrate-db/
 # =============== #
 themes/inhabitent/node_modules/
 themes/inhabitent/assets/
+themes/.DS_Store
+.DS_Store
