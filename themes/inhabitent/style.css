@@ -258,6 +258,10 @@ footer {
     padding-bottom: 20px; }
   .sidebar .contact p:nth-child(4) {
     padding-bottom: 10px; }
+    .sidebar .contact p:nth-child(4) i {
+      padding-right: 2px; }
+  .sidebar .contact p:nth-child(5) {
+    padding-left: 15px; }
   .sidebar .contact span {
     color: #248a83;
     padding-left: 5px; }
@@ -511,7 +515,7 @@ main p {
 
 .find-us {
   grid-column-start: 1;
-  padding-left: 50px;
+  padding: 50px;
   border-right: 1px solid #e1e1e1; }
   .find-us h2 {
     text-transform: uppercase;
