@@ -34,7 +34,6 @@ access_log
 !themes/
 !uploads/
 !README.md
-
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
 plugins/*
@@ -43,11 +42,9 @@ plugins/*
 # ========================================================== #
 themes/*
 !themes/inhabitent/
-
 # Ignore WP Migrate DB Dir #
 # =============== #
 uploads/wp-migrate-db/
-
 # Ignore packages #
 # =============== #
 themes/inhabitent/node_modules/
